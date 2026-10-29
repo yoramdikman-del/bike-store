@@ -1,20 +1,56 @@
-# סבב 2 – 29.10.2026: פריטים מהלינקטרי שעוד לא נכנסו
-# כללים: חנות מותג רשמית, דירוג 94%+, 100+ מכירות. בלי פחמן מבני.
-RockBros kickstand
-WEST BIKING kickstand
-RockBros chain lube
-WEST BIKING chain oil
-bike chain wax lubricant
-RockBros chain cleaner
-bike mineral oil brake
-RockBros tire lever
-RockBros reflective leg strap
-RockBros winter cap cycling
-RockBros balaclava cycling
-RockBros bike computer mount
-iGPSPORT mount
-CYCPLUS mount
+# סבב 4 – 29.10.2026: בקשות יורם – פנימיות, צמיגים, ונטילים, ערכות תיקון, מעילים, בנדנות, מגיני רוח, תיקי גב לשטח
+# פנימיות
+bike inner tube presta
+bike inner tube schrader 29
+TPU inner tube ultralight
+RideNow TPU inner tube
+CYCLAMI TPU inner tube
+Maxxis inner tube
+Kenda inner tube
+CST inner tube
+Chaoyang inner tube
+road bike inner tube 700x25
+MTB inner tube 27.5
+# צמיגים
+Maxxis tire MTB
+Maxxis road tire
+Kenda tire
+CST bike tire
+Chaoyang tire
+Panaracer tire
+WTB tire
+Continental bike tire
+Schwalbe tire
+tubeless tire sealant
+tubeless valve
+# ונטילים ומתאמים
+presta schrader valve adapter
+presta valve extender
+bike valve core tool
+# ערכות תיקון בתיק קטן
+bike tire repair kit bag
+RockBros repair kit saddle bag
+WEST BIKING repair kit
+emergency bike tool kit pouch
+# מעילים
+RockBros reflective jacket cycling
+WOSAWE reflective jacket
+cycling windbreaker reflective
+RockBros rain jacket cycling
+cycling rain jacket waterproof
+WOSAWE rain jacket
+Santic jacket
+X-TIGER jacket
+reflective vest cycling
+# בנדנות ומגיני רוח
+RockBros bandana
+cycling bandana neck gaiter
+multifunctional headscarf cycling
+RockBros windproof face mask
+cycling neck warmer windproof
+# תיקי גב לשטח
 RockBros hydration backpack
-Rhinowalk backpack cycling
-RockBros helmet
-WEST BIKING helmet
+Rhinowalk backpack
+WEST BIKING backpack
+INOXTO hydration backpack
+MTB backpack hydration 2L
