@@ -1,41 +1,21 @@
-# סבב 5 – 29.10.2026: מיגון DH, קסדות פול-פייס, נעלי קליטים, צמיגים ממשווקים
-# מיגון
-RockBros knee pads MTB
-RockBros elbow pads cycling
-MTB knee pads downhill
-MTB elbow pads downhill
-knee shin guard MTB
-WOSAWE knee pads
-WOSAWE elbow pads
-protective jacket MTB armor
-# קסדות פול-פייס (רק עם EN 1078 / ASTM F1952 / CPSC)
-full face helmet MTB downhill
-RockBros full face helmet
-BATFOX full face helmet
-downhill helmet ASTM F1952
-# נעלי קליטים ושטוחות
-SPD MTB shoes
-RockBros cycling shoes
-Santic cycling shoes
-Darevie cycling shoes
-BOODUN cycling shoes
-TIEBAO cycling shoes
-road cycling shoes SPD-SL carbon sole
-MTB flat pedal shoes
-SPD cleats SH51
-SPD pedals MTB
-RockBros SPD pedals
-# צמיגים (משווקים מובילים)
-Maxxis Minion DHF
-Maxxis Assegai
-Maxxis Rekon
-Maxxis Ardent
-Maxxis Ikon
-Continental Grand Prix 5000
-Continental Gatorskin
-Continental Grand Prix
-Kenda tire 700x25
-Kenda MTB tire 29
-Schwalbe Marathon
-Schwalbe Big Apple
-Pirelli P Zero Velo
+# סבב 5ב – 29.10.2026: מכנסיים מרופדים + פנימיות עם חומר אוטם
+# מכנסיים מרופדים
+RockBros padded shorts
+RockBros bib shorts
+X-TIGER bib shorts
+X-TIGER padded shorts
+Santic bib shorts
+Darevie bib shorts
+WOSAWE padded shorts
+MTB baggy shorts with liner
+women cycling padded shorts
+cycling long pants padded winter
+cycling liner shorts gel
+# פנימיות עם חומר אוטם ועמידות לפנצ'רים
+self sealing inner tube
+sealant inner tube bike
+Slime inner tube
+puncture proof inner tube bike
+anti puncture inner tube 29
+thorn resistant inner tube
+inner tube with sealant 700c
