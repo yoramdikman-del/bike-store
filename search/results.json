@@ -1,0 +1,971 @@
+{
+ "date": "2026-10-29T09:33",
+ "queries": [
+  "iGPSPORT bike computer",
+  "iGPSPORT BSC300",
+  "iGPSPORT speed cadence sensor",
+  "iGPSPORT heart rate monitor",
+  "iGPSPORT power meter",
+  "CYCPLUS bike computer",
+  "CYCPLUS speed cadence sensor",
+  "Magene bike computer",
+  "Magene speed cadence sensor",
+  "Magene power meter",
+  "Magene heart rate",
+  "CoOSPO bike computer",
+  "CoOSPO heart rate monitor",
+  "bike computer mount out front",
+  "RockBros bike front light",
+  "RockBros smart tail light",
+  "GACIRON bike light",
+  "TOWILD bike light",
+  "Enfitnix tail light",
+  "Enfitnix Cubelite",
+  "bike radar tail light",
+  "bike mirror handlebar",
+  "reflective ankle strap cycling",
+  "Rhinowalk saddle bag",
+  "Rhinowalk frame bag",
+  "Rhinowalk handlebar bag",
+  "Rhinowalk pannier",
+  "Rhinowalk fork bag",
+  "RockBros top tube bag",
+  "RockBros saddle bag",
+  "SAHOO bike bag",
+  "cycling hydration backpack",
+  "CYCPLUS electric pump",
+  "RockBros electric pump",
+  "RockBros mini pump",
+  "bike floor pump gauge",
+  "tubeless repair kit",
+  "RockBros tire lever",
+  "RockBros multitool",
+  "WEST BIKING tool",
+  "TOOPRE bike tool",
+  "RIDERACE multi tool",
+  "chain checker wear indicator",
+  "bike chain lube",
+  "bike chain cleaner",
+  "bike torque wrench",
+  "RISK titanium bolts",
+  "ZTTO chain",
+  "ZTTO cassette",
+  "ZTTO brake pads",
+  "SENSAH derailleur",
+  "SENSAH shifter",
+  "SHIMANO brake pads",
+  "mineral oil brake bleed kit",
+  "disc brake rotor 160mm",
+  "Promend pedals",
+  "RockBros pedals",
+  "flat pedals MTB",
+  "RockBros saddle",
+  "bike handlebar grips lock on",
+  "road handlebar tape",
+  "RockBros water bottle insulated",
+  "RockBros bottle cage",
+  "RockBros phone holder bike",
+  "bike phone mount aluminum",
+  "KAPVOE cycling glasses",
+  "RockBros photochromic glasses",
+  "Santic cycling",
+  "RockBros cycling gloves",
+  "RockBros arm sleeves",
+  "X-TIGER padded shorts",
+  "RockBros helmet",
+  "CAIRBULL helmet",
+  "GIYO bike"
+ ],
+ "count": 0,
+ "errors": [
+  {
+   "q": "iGPSPORT bike computer",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932662490647295', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "iGPSPORT bike computer",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932662499654370', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "iGPSPORT BSC300",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e8f117932662509076389', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "iGPSPORT BSC300",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932662521344844', '_trace_id_': '2141149"
+  },
+  {
+   "q": "iGPSPORT speed cadence sensor",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932662534685343', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "iGPSPORT speed cadence sensor",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e41c17932662543735860', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "iGPSPORT heart rate monitor",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a6b7f17932662551362628', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "iGPSPORT heart rate monitor",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2102ece217932662563631619', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "iGPSPORT power meter",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b8deea517932662575478811', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "iGPSPORT power meter",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662584398653', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "CYCPLUS bike computer",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2102ece217932662593372268', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "CYCPLUS bike computer",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932662606722673', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "CYCPLUS speed cadence sensor",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932662614461465', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "CYCPLUS speed cadence sensor",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932662622022293', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "Magene bike computer",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932662632697908', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "Magene bike computer",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932662641702081', '_trace_id_': '214114e"
+  },
+  {
+   "q": "Magene speed cadence sensor",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e41c17932662653698298', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "Magene speed cadence sensor",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83fe6a17932662665896933', '_trace_id_': '2151fca"
+  },
+  {
+   "q": "Magene power meter",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932662677877231', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "Magene power meter",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2102ece217932662689934488', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "Magene heart rate",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b8deea517932662698943613', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "Magene heart rate",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932662706583585', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "CoOSPO bike computer",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662714173596', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "CoOSPO bike computer",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932662727385429', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "CoOSPO heart rate monitor",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932662739538603', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "CoOSPO heart rate monitor",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21410da317932662747213452', '_trace_id_': '2141315"
+  },
+  {
+   "q": "bike computer mount out front",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21410da317932662756173636', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "bike computer mount out front",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662766854748', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "RockBros bike front light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932662778905184', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "RockBros bike front light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a6b7f17932662786557872', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "RockBros smart tail light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932662798675612', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "RockBros smart tail light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932662809366372', '_trace_id_': '2151fca"
+  },
+  {
+   "q": "GACIRON bike light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932662821507514', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "GACIRON bike light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932662833557772', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "TOWILD bike light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932662841137952', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "TOWILD bike light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932662848507241', '_trace_id_': '2141149"
+  },
+  {
+   "q": "Enfitnix tail light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932662860504610', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "Enfitnix tail light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662868147014', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "Enfitnix Cubelite",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932662878905883', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "Enfitnix Cubelite",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932662889406582', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "bike radar tail light",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932662897085817', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "bike radar tail light",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932662907812629', '_trace_id_': '2151fd3"
+  },
+  {
+   "q": "bike mirror handlebar",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e4fa17932662919896320', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "bike mirror handlebar",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932662927294728', '_trace_id_': '2141315"
+  },
+  {
+   "q": "reflective ankle strap cycling",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932662934771129', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "reflective ankle strap cycling",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21410da317932662946767852', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "Rhinowalk saddle bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662954238857', '_trace_id_': '2151fd3a17"
+  },
+  {
+   "q": "Rhinowalk saddle bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e4fa17932662961697237', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "Rhinowalk frame bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932662972364000', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "Rhinowalk frame bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932662979952234', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "Rhinowalk handlebar bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932662987601587', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "Rhinowalk handlebar bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932662995207514', '_trace_id_': '2141315"
+  },
+  {
+   "q": "Rhinowalk pannier",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663010812899', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "Rhinowalk pannier",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932663018538461', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "Rhinowalk fork bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663030533317', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "Rhinowalk fork bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663037923480', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "RockBros top tube bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '214125d717932663049984530', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "RockBros top tube bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932663062074747', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "RockBros saddle bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663074021173', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "RockBros saddle bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a745617932663086122127', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "SAHOO bike bag",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932663093651387', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "SAHOO bike bag",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83fe6a17932663104148450', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "cycling hydration backpack",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a73a517932663111722973', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "cycling hydration backpack",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663123957226', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "CYCPLUS electric pump",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663134705492', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "CYCPLUS electric pump",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932663146626512', '_trace_id_': '214114e"
+  },
+  {
+   "q": "RockBros electric pump",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '214125d717932663157296785', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "RockBros electric pump",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663164836138', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "RockBros mini pump",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b8deea517932663175445901', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "RockBros mini pump",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932663183072156', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "bike floor pump gauge",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932663193542372', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "bike floor pump gauge",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a73a517932663205574940', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "tubeless repair kit",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a6b7f17932663213051033', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "tubeless repair kit",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663220494244', '_trace_id_': '2141315"
+  },
+  {
+   "q": "RockBros tire lever",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a745617932663228225118', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "RockBros tire lever",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21410da317932663240366076', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "RockBros multitool",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663247866221', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "RockBros multitool",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663255378088', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "WEST BIKING tool",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21410da317932663262906584', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "WEST BIKING tool",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932663275091300', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "TOOPRE bike tool",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663285596578', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "TOOPRE bike tool",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663297851030', '_trace_id_': '214114e"
+  },
+  {
+   "q": "RIDERACE multi tool",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932663308586011', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "RIDERACE multi tool",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663316223388', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "chain checker wear indicator",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83fe6a17932663328285308', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "chain checker wear indicator",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0baf723f17932663335764395', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "bike chain lube",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663343288338', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "bike chain lube",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a73a517932663350758153', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "bike chain cleaner",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e4fa17932663361377809', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "bike chain cleaner",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a6b7f17932663373274565', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "bike torque wrench",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a36417932663380852063', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "bike torque wrench",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663388553041', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "RISK titanium bolts",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e8f117932663400601864', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "RISK titanium bolts",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932663408148842', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "ZTTO chain",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e81a17932663418617324', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "ZTTO chain",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '214125d717932663429224694', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "ZTTO cassette",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0baf723f17932663441086684', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "ZTTO cassette",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932663448764184', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "ZTTO brake pads",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932663459321898', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "ZTTO brake pads",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663466952981', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "SENSAH derailleur",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663474626780', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "SENSAH derailleur",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663485256990', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "SENSAH shifter",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663495793549', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "SENSAH shifter",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663503415407', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "SHIMANO brake pads",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932663515266405', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "SHIMANO brake pads",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e8f117932663527344482', '_trace_id_': '214114e"
+  },
+  {
+   "q": "mineral oil brake bleed kit",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663539578121', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "mineral oil brake bleed kit",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663547116310', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "disc brake rotor 160mm",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932663557717279', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "disc brake rotor 160mm",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '214125d717932663568147540', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "Promend pedals",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663575815204', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "Promend pedals",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932663587877900', '_trace_id_': '2102f1c"
+  },
+  {
+   "q": "RockBros pedals",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663599755208', '_trace_id_': '0b8ded7b17"
+  },
+  {
+   "q": "RockBros pedals",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932663607314276', '_trace_id_': '2151fd2"
+  },
+  {
+   "q": "flat pedals MTB",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932663614908458', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "flat pedals MTB",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932663626935367', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "RockBros saddle",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663638956066', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "RockBros saddle",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663649662441', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "bike handlebar grips lock on",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2141138a17932663661752697', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "bike handlebar grips lock on",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a640e17932663673686378', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "road handlebar tape",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0baf723f17932663681293698', '_trace_id_': '2151fd2c17"
+  },
+  {
+   "q": "road handlebar tape",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663693401436', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "RockBros water bottle insulated",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663700866552', '_trace_id_': '2151fca717"
+  },
+  {
+   "q": "RockBros water bottle insulated",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663711356802', '_trace_id_': '2151fce"
+  },
+  {
+   "q": "RockBros bottle cage",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a715417932663723512113', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "RockBros bottle cage",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932663734022230', '_trace_id_': '214114e"
+  },
+  {
+   "q": "RockBros phone holder bike",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663744488399', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "RockBros phone holder bike",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0baf723f17932663752045267', '_trace_id_': '2141149"
+  },
+  {
+   "q": "bike phone mount aluminum",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663764118830', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "bike phone mount aluminum",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e4fa17932663776598668', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "KAPVOE cycling glasses",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e8f117932663788522097', '_trace_id_': '2151fce817"
+  },
+  {
+   "q": "KAPVOE cycling glasses",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a9a517932663801391634', '_trace_id_': '214114e"
+  },
+  {
+   "q": "RockBros photochromic glasses",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e8f117932663808892552', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "RockBros photochromic glasses",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663819431159', '_trace_id_': '2141149"
+  },
+  {
+   "q": "Santic cycling",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0baf723f17932663827206922', '_trace_id_': '2141149b17"
+  },
+  {
+   "q": "Santic cycling",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a6b7f17932663839356535', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "RockBros cycling gloves",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2102ece217932663851475581', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "RockBros cycling gloves",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932663863545967', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "RockBros arm sleeves",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bafcbae17932663871082364', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "RockBros arm sleeves",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0bb4a80e17932663878562296', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "X-TIGER padded shorts",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '21411fe917932663889266540', '_trace_id_': '214114e317"
+  },
+  {
+   "q": "X-TIGER padded shorts",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212a799017932663896834258', '_trace_id_': '2141149"
+  },
+  {
+   "q": "RockBros helmet",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '214125d717932663908877043', '_trace_id_': '2102f1cd17"
+  },
+  {
+   "q": "RockBros helmet",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b8deea517932663919506024', '_trace_id_': '212a7b8"
+  },
+  {
+   "q": "CAIRBULL helmet",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2151e87717932663930156070', '_trace_id_': '212a7b8d17"
+  },
+  {
+   "q": "CAIRBULL helmet",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '0b83c70d17932663937977637', '_trace_id_': '0b8ded7"
+  },
+  {
+   "q": "GIYO bike",
+   "method": "aliexpress.affiliate.product.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_product_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '212e59e617932663950097027', '_trace_id_': '2141315917"
+  },
+  {
+   "q": "GIYO bike",
+   "method": "aliexpress.affiliate.hotproduct.query",
+   "page": 1,
+   "res": "{'aliexpress_affiliate_hotproduct_query_response': {'resp_result': {'resp_code': 402, 'resp_msg': 'TrackingId input parameter error'}, 'request_id': '2102ece217932663957617988', '_trace_id_': '214114e"
+  }
+ ],
+ "products": []
+}
