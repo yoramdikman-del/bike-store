@@ -34,7 +34,7 @@
    "id": "lights",
    "name": "תאורה ובטיחות",
    "title": "לראות ולהיראות",
-   "intro": "פנסי חזית, פנסי זנב חכמים שמהבהבים בבלימה, מראות ופסים מחזירי אור. לרכיבת ערב, לרכיבת בוקר מוקדמת ולכביש.",
+   "intro": "פנסי חזית, פנסי זנב חכמים שמהבהבים בבלימה, מראות, פסים מחזירי אור ומנעולים. לרכיבת ערב, לרכיבת בוקר מוקדמת ולעיר.",
    "groups": [
     [
      "front",
@@ -47,13 +47,17 @@
     [
      "mirrors",
      "מראות ומחזירי אור"
+    ],
+    [
+     "locks",
+     "מנעולים"
     ]
    ],
    "how": [
     "בכביש: פנס זנב שמהבהב גם ביום מוסיף הרבה בטיחות.",
     "בשטח בלילה: לפחות 800 לומן בחזית, ועדיף פנס נוסף על הקסדה."
    ],
-   "search": "חיפוש: פנס זנב, GACIRON, מראה…"
+   "search": "חיפוש: פנס זנב, RAVEMEN, מראה…"
   },
   {
    "id": "bags",
@@ -126,6 +130,10 @@
     [
      "workshop",
      "כלים לבית"
+    ],
+    [
+     "parking",
+     "רגליות"
     ]
    ],
    "search": "חיפוש: מולטיטול, שמן שרשרת…"
@@ -1782,6 +1790,164 @@
     "gravel",
     "city"
    ]
+  },
+  {
+   "collection": "tools",
+   "group": "parking",
+   "id": "1005007950047534",
+   "brand": "RockBros",
+   "title": "רגלית מתכווננת לאופניים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 13.33,
+   "rating": 95.2,
+   "sold": 1289,
+   "link": "https://www.aliexpress.com/item/1005007950047534.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2d0f881e128e447a9efc8f3e234df562o.jpg",
+   "tid": "direct",
+   "acts": [
+    "city",
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "pumps",
+   "group": "repair",
+   "id": "1005008164271731",
+   "brand": "RockBros",
+   "title": "ערכת תיקון פנצ'רים עם מנופי צמיג",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 5.39,
+   "rating": 94.3,
+   "sold": 1493,
+   "link": "https://www.aliexpress.com/item/1005008164271731.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Seb72b1673c3841d2acb9b2192e343101x.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "gravel",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "computers",
+   "group": "mounts",
+   "id": "1005009015370114",
+   "brand": "RockBros",
+   "title": "תושבת למחשב דרך ולפנס על הכידון",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 7.55,
+   "rating": 95.2,
+   "sold": 2298,
+   "link": "https://www.aliexpress.com/item/1005009015370114.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S6a3ac761fb4e49c9bf50415e1897b78eq.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "lights",
+   "group": "locks",
+   "id": "1005008134209479",
+   "brand": "RockBros",
+   "title": "מנעול כבל קטן עם קוד, גם לקסדה",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 7.95,
+   "rating": 97.1,
+   "sold": 2656,
+   "link": "https://www.aliexpress.com/item/1005008134209479.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S4c2f2d6c421c4f759b7759cb939e7d0cr.jpg",
+   "tid": "direct",
+   "acts": [
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "sun",
+   "id": "1005008263214556",
+   "brand": "RockBros",
+   "title": "כיסוי פנים לקיץ, הגנת UV",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 8.55,
+   "rating": 97.7,
+   "sold": 2638,
+   "link": "https://www.aliexpress.com/item/1005008263214556.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sf840ec6985734a39bf4c99c04c42f470E.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "sun",
+   "id": "1005005343117188",
+   "brand": "WEST BIKING",
+   "title": "כובע פליז לחורף מתחת לקסדה",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 4.19,
+   "rating": 96.0,
+   "sold": 1326,
+   "link": "https://www.aliexpress.com/item/1005005343117188.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2952f04c4f804534853320143385f720E.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "night"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "sun",
+   "id": "1005007899740366",
+   "brand": "RockBros",
+   "title": "כיסוי פנים וצוואר חם לחורף",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 9.89,
+   "rating": 97.4,
+   "sold": 2221,
+   "link": "https://www.aliexpress.com/item/1005007899740366.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S250a14342d9448b897127a6fd63b3582m.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "night"
+   ],
+   "status": "pending"
   }
  ],
  "activities": [
