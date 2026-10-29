@@ -1,89 +1,20 @@
-# סבב 1 – 29.10.2026: מותגי הפרויקט + נושאים מהלינקטרי (The_Bike_Shop_IL)
-# הרצה: 29.10.2026 (2)
-# כללים: חנות מותג רשמית, דירוג 94%+, 100+ מכירות, בלי תקרת מחיר.
-# לא נכנסים: כידון, מוט אוכף, גלגלים ושלדה מפחמן. קסדות רק עם EN1078 מוצהר.
-# מחשבי דרך וחיישנים
-iGPSPORT bike computer
-iGPSPORT BSC300
-iGPSPORT speed cadence sensor
-iGPSPORT heart rate monitor
-iGPSPORT power meter
-CYCPLUS bike computer
-CYCPLUS speed cadence sensor
-Magene bike computer
-Magene speed cadence sensor
-Magene power meter
-Magene heart rate
-CoOSPO bike computer
-CoOSPO heart rate monitor
-bike computer mount out front
-# תאורה ובטיחות
-RockBros bike front light
-RockBros smart tail light
-GACIRON bike light
-TOWILD bike light
-Enfitnix tail light
-Enfitnix Cubelite
-bike radar tail light
-bike mirror handlebar
-reflective ankle strap cycling
-# תיקים ובייקפאקינג
-Rhinowalk saddle bag
-Rhinowalk frame bag
-Rhinowalk handlebar bag
-Rhinowalk pannier
-Rhinowalk fork bag
-RockBros top tube bag
-RockBros saddle bag
-SAHOO bike bag
-cycling hydration backpack
-# ניפוח ותיקון
-CYCPLUS electric pump
-RockBros electric pump
-RockBros mini pump
-bike floor pump gauge
-tubeless repair kit
+# סבב 2 – 29.10.2026: פריטים מהלינקטרי שעוד לא נכנסו
+# כללים: חנות מותג רשמית, דירוג 94%+, 100+ מכירות. בלי פחמן מבני.
+RockBros kickstand
+WEST BIKING kickstand
+RockBros chain lube
+WEST BIKING chain oil
+bike chain wax lubricant
+RockBros chain cleaner
+bike mineral oil brake
 RockBros tire lever
-# כלים ואחזקה
-RockBros multitool
-WEST BIKING tool
-TOOPRE bike tool
-RIDERACE multi tool
-chain checker wear indicator
-bike chain lube
-bike chain cleaner
-bike torque wrench
-RISK titanium bolts
-# הינע ובלמים
-ZTTO chain
-ZTTO cassette
-ZTTO brake pads
-SENSAH derailleur
-SENSAH shifter
-SHIMANO brake pads
-mineral oil brake bleed kit
-disc brake rotor 160mm
-# פדלים, אוכפים וגריפים
-Promend pedals
-RockBros pedals
-flat pedals MTB
-RockBros saddle
-bike handlebar grips lock on
-road handlebar tape
-# בקבוקים ומנשאים
-RockBros water bottle insulated
-RockBros bottle cage
-# מחזיקי טלפון
-RockBros phone holder bike
-bike phone mount aluminum
-# ביגוד, כפפות ומשקפיים
-KAPVOE cycling glasses
-RockBros photochromic glasses
-Santic cycling
-RockBros cycling gloves
-RockBros arm sleeves
-X-TIGER padded shorts
-# קסדות (רק עם תקן)
+RockBros reflective leg strap
+RockBros winter cap cycling
+RockBros balaclava cycling
+RockBros bike computer mount
+iGPSPORT mount
+CYCPLUS mount
+RockBros hydration backpack
+Rhinowalk backpack cycling
 RockBros helmet
-CAIRBULL helmet
-GIYO bike
+WEST BIKING helmet
