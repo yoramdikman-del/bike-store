@@ -32,7 +32,7 @@ for q in queries:
     for method in ('aliexpress.affiliate.product.query', 'aliexpress.affiliate.hotproduct.query'):
         for page in range(1, pages + 1):
             res = call(method, keywords=q, ship_to_country='IL', target_currency='USD', target_language='EN',
-                       page_size=50, page_no=page, sort='LAST_VOLUME_DESC', tracking_id='bikesite')
+                       page_size=50, page_no=page, sort='LAST_VOLUME_DESC', tracking_id=os.environ.get('SEARCH_TRACKING', 'campsite'))  # מחקר בלבד; הקישורים לאתר נוצרים עם bikesite
             key = method.replace('.', '_') + '_response'
             root = (res.get(key) or {}).get('resp_result') or {}
             if root.get('resp_code') != 200:
