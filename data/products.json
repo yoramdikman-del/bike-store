@@ -88,7 +88,7 @@
    "id": "tires",
    "name": "צמיגים ופנימיות",
    "title": "מה שנשחק ראשון",
-   "intro": "פנימיות רגילות ו-TPU קלות, צמיגים לכביש ולשטח, ונטילים ומתאמים. מוצרים מתכלים שכדאי שיהיו תמיד בבית ובתיק.",
+   "intro": "פנימיות רגילות ו-TPU קלות, צמיגים של Maxxis, Continental ו-Kenda, סרטי הגנה מפנצ'רים, ונטילים ומתאמים. מוצרים מתכלים שכדאי שיהיו תמיד בבית ובתיק.",
    "groups": [
     [
      "tubes",
@@ -105,6 +105,10 @@
     [
      "tubeless",
      "טיובלס"
+    ],
+    [
+     "liners",
+     "הגנה מפנצ'רים"
     ]
    ],
    "how": [
@@ -250,11 +254,15 @@
    "id": "wear",
    "name": "ביגוד, כפפות ומשקפיים",
    "title": "נוח ומוגן מהשמש",
-   "intro": "משקפיים, כפפות, מעילים מחזירי אור ומעילי גשם, בנדנות ומגיני רוח, מכנסיים מרופדים. מ-RockBros, X-TIGER, KAPVOE ועוד.",
+   "intro": "חולצות מנדפות, מכנסיים מרופדים, מעילים מחזירי אור ומעילי גשם, משקפיים, כפפות, בנדנות ושרוולי שמש. מ-Darevie, RockBros, X-TIGER ועוד.",
    "groups": [
     [
      "glasses",
      "משקפיים"
+    ],
+    [
+     "jerseys",
+     "חולצות רכיבה"
     ],
     [
      "gloves",
@@ -270,7 +278,7 @@
     ],
     [
      "clothes",
-     "ביגוד"
+     "מכנסיים מרופדים וביגוד"
     ]
    ],
    "search": "חיפוש: משקפיים, כפפות…"
@@ -286,60 +294,6 @@
     "קסדה שספגה מכה מחליפים, גם אם לא רואים בה סדק."
    ],
    "search": "חיפוש: קסדה…"
-  },
-  {
-   "id": "protect",
-   "name": "מיגון לשטח ו-DH",
-   "title": "נופלים? קמים וממשיכים",
-   "intro": "מגני ברכיים ומרפקים, מגני שוק וקסדות פול-פייס. לשטח, לאנדורו ולדאון-היל.",
-   "groups": [
-    [
-     "knee",
-     "מגני ברכיים ושוק"
-    ],
-    [
-     "elbow",
-     "מגני מרפקים"
-    ],
-    [
-     "fullface",
-     "קסדות פול-פייס"
-    ]
-   ],
-   "how": [
-    "מגנים בוחרים לפי היקף הברך או המרפק, כ-10 ס\"מ מעל ומתחת למפרק.",
-    "לדאון-היל: קסדה פול-פייס עם תקן ASTM F1952 או EN 1078."
-   ],
-   "search": "חיפוש: מגן ברכיים, פול-פייס…"
-  },
-  {
-   "id": "shoes",
-   "name": "נעלי רכיבה וקליטים",
-   "title": "כל דוושה נספרת",
-   "intro": "נעלי רכיבה לשטח (SPD) ולכביש (SPD-SL), נעליים לפדלים שטוחים, קליטים ופדלים נעולים.",
-   "groups": [
-    [
-     "mtb",
-     "נעלי שטח SPD"
-    ],
-    [
-     "road",
-     "נעלי כביש"
-    ],
-    [
-     "flat",
-     "נעליים לפדלים שטוחים"
-    ],
-    [
-     "cleats",
-     "קליטים ופדלים"
-    ]
-   ],
-   "how": [
-    "נעלי שטח (2 ברגים) מתאימות לקליטי SPD. נעלי כביש (3 ברגים) לקליטי SPD-SL או LOOK.",
-    "מידה: מודדים אורך כף רגל בס\"מ ובודקים בטבלת המידות של היצרן."
-   ],
-   "search": "חיפוש: נעלי SPD, קליטים…"
   }
  ],
  "products": [
@@ -4395,6 +4349,645 @@
     "mtb",
     "road"
    ]
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005013012122799",
+   "brand": "Darevie",
+   "title": "מכנסי ביב עם ריפוד איטלקי Elastic Interface",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 54.99,
+   "rating": 100.0,
+   "sold": 4510,
+   "link": "https://www.aliexpress.com/item/1005013012122799.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa82196493795491fb9adcf80d16f52cd1.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005006820907190",
+   "brand": "Darevie",
+   "title": "מכנסי ביב חלקים בלי תפרים, ריפוד איטלקי",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 42.19,
+   "rating": 96.1,
+   "sold": 4151,
+   "link": "https://www.aliexpress.com/item/1005006820907190.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5550cd719f4541f0b6fcf30942878579p.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005005057467316",
+   "brand": "Darevie",
+   "title": "מכנסי ביב לרכיבות ארוכות, עד 6 שעות",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 37.69,
+   "rating": 95.8,
+   "sold": 2294,
+   "link": "https://www.aliexpress.com/item/1005005057467316.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc0821d63d9dc4106a47aba0a1ecfab68c.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "32827067778",
+   "brand": "Darevie",
+   "title": "מכנסי רכיבה קצרים עם ריפוד ג'ל 3D",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 25.49,
+   "rating": 98.1,
+   "sold": 504,
+   "link": "https://www.aliexpress.com/item/32827067778.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S268030fe0ded41cba1899b033343b3e5d.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005008388889338",
+   "brand": "RockBros",
+   "title": "תחתוני רכיבה עם ריפוד ג'ל 3D",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 22.05,
+   "rating": 95.4,
+   "sold": 620,
+   "link": "https://www.aliexpress.com/item/1005008388889338.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S004ad65a3552432d8ba56695b40ce5deu.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb",
+    "city",
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005010790977442",
+   "brand": "RockBros",
+   "title": "מכנסי ביב קלים לקיץ",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 35.69,
+   "rating": 95.6,
+   "sold": 470,
+   "link": "https://www.aliexpress.com/item/1005010790977442.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S45e840b3879749e1ac5fded2deadae1bX.jpg",
+   "tid": "direct",
+   "acts": [
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005007066736977",
+   "brand": "X-TIGER",
+   "title": "מכנסי שטח רחבים עם כיסים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 28.89,
+   "rating": 95.2,
+   "sold": 445,
+   "link": "https://www.aliexpress.com/item/1005007066736977.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Se1f30c33e91a4c47b7d182b4faed4978g.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "1005006941255806",
+   "brand": "X-TIGER",
+   "title": "מכנסי ביב לרכיבות ארוכות",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 30.39,
+   "rating": 95.3,
+   "sold": 355,
+   "link": "https://www.aliexpress.com/item/1005006941255806.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8c9248015b834cb39b456472b2b98c23l.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "clothes",
+   "id": "32828371028",
+   "brand": "Darevie",
+   "title": "מכנסי ביב ארוכים מרופדים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 38.89,
+   "rating": 96.8,
+   "sold": 412,
+   "link": "https://www.aliexpress.com/item/32828371028.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3cd4c98bfc2a4b51bc0ad09efe7ba836F.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "night"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005005561105339",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה ארוכה, בד מאוורר",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 30.69,
+   "rating": 95.8,
+   "sold": 3145,
+   "link": "https://www.aliexpress.com/item/1005005561105339.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S04352df60a3344cab262a6aaef7a0dc6x.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005007468286162",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה ארוכה מקררת",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 29.39,
+   "rating": 97.0,
+   "sold": 510,
+   "link": "https://www.aliexpress.com/item/1005007468286162.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S6238698556ce47e89c137338b7ce3717U.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005004802943684",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה קצרה עם הגנת SPF 50",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 28.29,
+   "rating": 96.5,
+   "sold": 2383,
+   "link": "https://www.aliexpress.com/item/1005004802943684.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S8718adcccc674af0ac56b9048ab9bbd6w.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005008650894968",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה מקצועית עם הגנת SPF 50+",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 26.29,
+   "rating": 96.6,
+   "sold": 933,
+   "link": "https://www.aliexpress.com/item/1005008650894968.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5184b8a2f99b45748d422396ab14d403d.jpg",
+   "tid": "direct",
+   "acts": [
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005006646135897",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה מנדפת, בד מקרר",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 26.69,
+   "rating": 97.4,
+   "sold": 1290,
+   "link": "https://www.aliexpress.com/item/1005006646135897.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sd6f9ed848009455fb8788a10888ca1f2j.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005007864823859",
+   "brand": "Darevie",
+   "title": "חולצת רכיבה ארוכה לחורף, פליז",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 29.28,
+   "rating": 95.7,
+   "sold": 1629,
+   "link": "https://www.aliexpress.com/item/1005007864823859.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S3e76d863a44f47e7aea4901d0cd5e4c2f.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "night"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005008665262006",
+   "brand": "RockBros",
+   "title": "חולצת רכיבה קצרה עם פסים מחזירי אור",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 23.51,
+   "rating": 94.6,
+   "sold": 913,
+   "link": "https://www.aliexpress.com/item/1005008665262006.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S93eeb5cdcaf5459cbde775684d09216aG.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "city",
+    "night"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "jerseys",
+   "id": "1005008208549087",
+   "brand": "RockBros",
+   "title": "גופיית בסיס מנדפת בלי שרוולים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 12.18,
+   "rating": 96.8,
+   "sold": 1086,
+   "link": "https://www.aliexpress.com/item/1005008208549087.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S91cc86ca76fe4ac0a8efdaf53d045f5ak.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "sun",
+   "id": "1005004226267513",
+   "brand": "RockBros",
+   "title": "שרוולי שמש מבד קריר",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 7.4,
+   "rating": 96.4,
+   "sold": 1256,
+   "link": "https://www.aliexpress.com/item/1005004226267513.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sa3ae84d6e0d94e55bbc202267004fe26g.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "wear",
+   "group": "sun",
+   "id": "1005008549724875",
+   "brand": "RockBros",
+   "title": "שרוולי שמש לרגליים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 16.45,
+   "rating": 96.5,
+   "sold": 153,
+   "link": "https://www.aliexpress.com/item/1005008549724875.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb9bb90e4d5704ccdb544701d8066e19dl.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005009560531517",
+   "brand": "Continental",
+   "title": "צמיג כביש Grand Prix, 700x25–32",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 27.25,
+   "rating": 95.5,
+   "sold": 2007,
+   "link": "https://www.aliexpress.com/item/1005009560531517.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sdb185c36e3f346d68a9ccae08c75bffdr.jpg",
+   "tid": "direct",
+   "acts": [
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005009130411880",
+   "brand": "Continental",
+   "title": "צמיג כביש Grand Prix TR לטיובלס",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 26.59,
+   "rating": 95.9,
+   "sold": 863,
+   "link": "https://www.aliexpress.com/item/1005009130411880.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S03a1727898c34258b5c47bfc2f6e2f37S.jpg",
+   "tid": "direct",
+   "acts": [
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005008108078648",
+   "brand": "Continental",
+   "title": "צמיג שטח Race King ל-XC",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 45.39,
+   "rating": 97.6,
+   "sold": 577,
+   "link": "https://www.aliexpress.com/item/1005008108078648.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sc795dffb0f8e4eb7b58dec5a851db528K.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005005897863026",
+   "brand": "MAXXIS",
+   "title": "צמיג שטח Rekon Race, 29 אינץ'",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 53.59,
+   "rating": 98.3,
+   "sold": 1056,
+   "link": "https://www.aliexpress.com/item/1005005897863026.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sadf94e50e080496787a99a3185bfaaf9V.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005005896095673",
+   "brand": "MAXXIS",
+   "title": "צמיג שטח מהיר Aspen, 29 אינץ'",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 49.59,
+   "rating": 97.9,
+   "sold": 816,
+   "link": "https://www.aliexpress.com/item/1005005896095673.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S9fc91e97f81147c29d74621b2187b4c2J.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tires",
+   "id": "1005006997284919",
+   "brand": "KENDA",
+   "title": "צמיגי כביש 700x25/28, זוג",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 18.59,
+   "rating": 98.0,
+   "sold": 829,
+   "link": "https://www.aliexpress.com/item/1005006997284919.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S2528de055e714b118efd0f7f6c7584cfm.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "tubes",
+   "id": "1005008558926840",
+   "brand": "KENDA",
+   "title": "פנימיות, זוג, 20 עד 29 אינץ' ו-700C",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 4.36,
+   "rating": 98.0,
+   "sold": 1704,
+   "link": "https://www.aliexpress.com/item/1005008558926840.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S000336cd266947f1876b490496f3609cO.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "tires",
+   "group": "liners",
+   "id": "1005007542279206",
+   "brand": "BUCKLOS",
+   "title": "סרט הגנה מפנצ'רים בתוך הצמיג",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 2.92,
+   "rating": 94.6,
+   "sold": 1416,
+   "link": "https://www.aliexpress.com/item/1005007542279206.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/A0919ee1e24564faea5a991c7de04d229e.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb",
+    "city",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "cockpit",
+   "group": "pedals",
+   "id": "1005006383280187",
+   "brand": "RACEWORK",
+   "title": "פדלים נעולים לכביש עם קליטים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "",
+   "price": 26.49,
+   "rating": 96.7,
+   "sold": 2548,
+   "link": "https://www.aliexpress.com/item/1005006383280187.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S0a175ec5fe8545e5ad7e08ba941eb1e6P.jpg",
+   "tid": "direct",
+   "acts": [
+    "road"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "cockpit",
+   "group": "pedals",
+   "id": "1005007937923937",
+   "brand": "BUCKLOS",
+   "title": "פדלים דו-צדדיים SPD לשטח",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "נמכר על ידי משווק ולא בחנות המותג. כדאי לקרוא ביקורות עם תמונות לפני הקנייה.",
+   "price": 29.99,
+   "rating": 98.0,
+   "sold": 2248,
+   "link": "https://www.aliexpress.com/item/1005007937923937.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S81af2ad3e19c47c9a73acc3f92b145e50.jpg",
+   "tid": "direct",
+   "acts": [
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
   }
  ],
  "activities": [
