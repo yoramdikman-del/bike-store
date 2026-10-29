@@ -4369,8 +4369,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4391,8 +4390,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4413,8 +4411,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4436,8 +4433,7 @@
     "road",
     "mtb",
     "city"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4459,8 +4455,7 @@
     "mtb",
     "city",
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4480,8 +4475,7 @@
    "tid": "bikesite",
    "acts": [
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4501,8 +4495,7 @@
    "tid": "bikesite",
    "acts": [
     "mtb"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4523,8 +4516,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4545,8 +4537,7 @@
    "acts": [
     "road",
     "night"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4567,8 +4558,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4590,8 +4580,7 @@
     "road",
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4612,8 +4601,7 @@
    "acts": [
     "road",
     "mtb"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4633,8 +4621,7 @@
    "tid": "bikesite",
    "acts": [
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4656,8 +4643,7 @@
     "road",
     "mtb",
     "city"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4678,8 +4664,7 @@
    "acts": [
     "road",
     "night"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4701,8 +4686,7 @@
     "road",
     "city",
     "night"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4723,8 +4707,7 @@
    "acts": [
     "road",
     "mtb"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4746,8 +4729,7 @@
     "road",
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "wear",
@@ -4768,8 +4750,7 @@
    "acts": [
     "road",
     "mtb"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4789,8 +4770,7 @@
    "tid": "bikesite",
    "acts": [
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4810,8 +4790,7 @@
    "tid": "bikesite",
    "acts": [
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4832,8 +4811,7 @@
    "acts": [
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4854,8 +4832,7 @@
    "acts": [
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4875,8 +4852,7 @@
    "tid": "bikesite",
    "acts": [
     "mtb"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4897,8 +4873,7 @@
    "acts": [
     "road",
     "city"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4920,8 +4895,7 @@
     "road",
     "mtb",
     "city"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "tires",
@@ -4943,8 +4917,7 @@
     "mtb",
     "city",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "cockpit",
@@ -4964,8 +4937,7 @@
    "tid": "bikesite",
    "acts": [
     "road"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "cockpit",
@@ -4986,8 +4958,7 @@
    "acts": [
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   }
  ],
  "activities": [
