@@ -1,56 +1,41 @@
-# סבב 4 – 29.10.2026: בקשות יורם – פנימיות, צמיגים, ונטילים, ערכות תיקון, מעילים, בנדנות, מגיני רוח, תיקי גב לשטח
-# פנימיות
-bike inner tube presta
-bike inner tube schrader 29
-TPU inner tube ultralight
-RideNow TPU inner tube
-CYCLAMI TPU inner tube
-Maxxis inner tube
-Kenda inner tube
-CST inner tube
-Chaoyang inner tube
-road bike inner tube 700x25
-MTB inner tube 27.5
-# צמיגים
-Maxxis tire MTB
-Maxxis road tire
-Kenda tire
-CST bike tire
-Chaoyang tire
-Panaracer tire
-WTB tire
-Continental bike tire
-Schwalbe tire
-tubeless tire sealant
-tubeless valve
-# ונטילים ומתאמים
-presta schrader valve adapter
-presta valve extender
-bike valve core tool
-# ערכות תיקון בתיק קטן
-bike tire repair kit bag
-RockBros repair kit saddle bag
-WEST BIKING repair kit
-emergency bike tool kit pouch
-# מעילים
-RockBros reflective jacket cycling
-WOSAWE reflective jacket
-cycling windbreaker reflective
-RockBros rain jacket cycling
-cycling rain jacket waterproof
-WOSAWE rain jacket
-Santic jacket
-X-TIGER jacket
-reflective vest cycling
-# בנדנות ומגיני רוח
-RockBros bandana
-cycling bandana neck gaiter
-multifunctional headscarf cycling
-RockBros windproof face mask
-cycling neck warmer windproof
-# תיקי גב לשטח
-RockBros hydration backpack
-Rhinowalk backpack
-WEST BIKING backpack
-INOXTO hydration backpack
-MTB backpack hydration 2L
+# סבב 5 – 29.10.2026: מיגון DH, קסדות פול-פייס, נעלי קליטים, צמיגים ממשווקים
+# מיגון
+RockBros knee pads MTB
+RockBros elbow pads cycling
+MTB knee pads downhill
+MTB elbow pads downhill
+knee shin guard MTB
+WOSAWE knee pads
+WOSAWE elbow pads
+protective jacket MTB armor
+# קסדות פול-פייס (רק עם EN 1078 / ASTM F1952 / CPSC)
+full face helmet MTB downhill
+RockBros full face helmet
+BATFOX full face helmet
+downhill helmet ASTM F1952
+# נעלי קליטים ושטוחות
+SPD MTB shoes
+RockBros cycling shoes
+Santic cycling shoes
+Darevie cycling shoes
+BOODUN cycling shoes
+TIEBAO cycling shoes
+road cycling shoes SPD-SL carbon sole
+MTB flat pedal shoes
+SPD cleats SH51
+SPD pedals MTB
+RockBros SPD pedals
+# צמיגים (משווקים מובילים)
+Maxxis Minion DHF
+Maxxis Assegai
+Maxxis Rekon
+Maxxis Ardent
+Maxxis Ikon
+Continental Grand Prix 5000
+Continental Gatorskin
+Continental Grand Prix
+Kenda tire 700x25
+Kenda MTB tire 29
+Schwalbe Marathon
+Schwalbe Big Apple
+Pirelli P Zero Velo
