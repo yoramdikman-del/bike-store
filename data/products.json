@@ -3582,8 +3582,7 @@
     "road",
     "mtb",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "helmets",
@@ -3604,8 +3603,7 @@
    "acts": [
     "road",
     "gravel"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "helmets",
@@ -3627,8 +3625,7 @@
     "road",
     "mtb",
     "city"
-   ],
-   "status": "pending"
+   ]
   },
   {
    "collection": "helmets",
@@ -3650,8 +3647,7 @@
     "city",
     "night",
     "road"
-   ],
-   "status": "pending"
+   ]
   }
  ],
  "activities": [
