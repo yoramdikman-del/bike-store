@@ -3561,6 +3561,97 @@
     "road",
     "mtb"
    ]
+  },
+  {
+   "collection": "helmets",
+   "group": "",
+   "id": "1005008583764009",
+   "brand": "RockBros",
+   "title": "קסדת רכיבה מאווררת, 16 פתחים",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "תקן EN 1078. יבוא אישי, בלי תווית יבואן בעברית. רוכבי אופניים חשמליים: ודאו שהקסדה עומדת בדרישות החוק.",
+   "price": 44.99,
+   "rating": 98.6,
+   "sold": 621,
+   "link": "https://www.aliexpress.com/item/1005008583764009.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S5e7ebe68c53e434ba889f607551e3c66P.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "helmets",
+   "group": "",
+   "id": "1005009354753135",
+   "brand": "RockBros",
+   "title": "קסדת רכיבה קלה במיוחד",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "תקן EN 1078. יבוא אישי, בלי תווית יבואן בעברית. רוכבי אופניים חשמליים: ודאו שהקסדה עומדת בדרישות החוק.",
+   "price": 38.99,
+   "rating": 98.2,
+   "sold": 484,
+   "link": "https://www.aliexpress.com/item/1005009354753135.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S87734996f37b44e886c8bd21e7214647U.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "gravel"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "helmets",
+   "group": "",
+   "id": "1005009022417082",
+   "brand": "RockBros",
+   "title": "קסדת רכיבה יצוקה בחתיכה אחת",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "תקן EN 1078. יבוא אישי, בלי תווית יבואן בעברית. רוכבי אופניים חשמליים: ודאו שהקסדה עומדת בדרישות החוק.",
+   "price": 32.84,
+   "rating": 97.7,
+   "sold": 385,
+   "link": "https://www.aliexpress.com/item/1005009022417082.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/S734e1dae8b2e4e358d2f5e74e9c1412fk.jpg",
+   "tid": "direct",
+   "acts": [
+    "road",
+    "mtb",
+    "city"
+   ],
+   "status": "pending"
+  },
+  {
+   "collection": "helmets",
+   "group": "",
+   "id": "1005007838690721",
+   "brand": "RockBros",
+   "title": "קסדת רכיבה עם פנס אחורי מובנה",
+   "code": "",
+   "kind": "",
+   "fits": "",
+   "note": "תקן EN 1078. יבוא אישי, בלי תווית יבואן בעברית. רוכבי אופניים חשמליים: ודאו שהקסדה עומדת בדרישות החוק.",
+   "price": 28.99,
+   "rating": 97.1,
+   "sold": 158,
+   "link": "https://www.aliexpress.com/item/1005007838690721.html",
+   "img": "https://ae-pic-a1.aliexpress-media.com/kf/Sb8be807b736545fdafd7bee496d5d714i.jpg",
+   "tid": "direct",
+   "acts": [
+    "city",
+    "night",
+    "road"
+   ],
+   "status": "pending"
   }
  ],
  "activities": [
