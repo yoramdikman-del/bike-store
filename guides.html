@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>מדריכי קנייה לרוכבים – The Bike Shop</title>
+<meta name="description" content="מדריכי קנייה בעברית לאביזרי אופניים: איך בוחרים פנס, מחשב דרך, פנימית, משאבה, תיק ומכנסיים מרופדים. השוואות, מה מתאים לכביש, לשטח ולעיר, ומה פחות.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: long-read guides – sticky header, chip TOC, one bordered section per guide with a comparison table and product picks */
+:root{
+  --paper:#eef1ea; --ink:#14181b; --ink-soft:#3c454b; --line:#14181b;
+  --card:#ffffff; --accent:#e8590c; --accent-ink:#ffffff; --chip:#dfe5d6;
+  --good:#1b6b4a; --bad:#a3321b; --teal:#1d3a46; --lime:#c9e43a; --shadow:#14181b;
+  --f:"Fredoka","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.65}
+.wrap{max-width:980px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--line)}
+.bar{display:flex;align-items:center;gap:12px;padding-block:10px}
+.bar a.home{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.bar img{width:44px;height:44px;border-radius:50%;flex:none}
+.bar b{font-weight:700;font-size:1.15rem}
+.bar .back{margin-inline-start:auto;flex:none;text-decoration:none;font-weight:600;color:var(--accent-ink);background:var(--accent);padding:7px 14px;border-radius:999px;font-size:.92rem}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:34px 0 8px}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch;margin:0 0 20px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+nav.toc a{text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.95rem}
+nav.toc a:hover{background:var(--lime);color:#14181b}
+section.g{background:var(--card);border:3px solid var(--line);border-radius:28px;box-shadow:6px 6px 0 var(--shadow);padding:clamp(20px,4vw,34px);margin:0 0 34px;scroll-margin-top:80px}
+section.g h2{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:0 0 6px}
+.k{display:inline-block;background:var(--lime);color:#14181b;font-weight:700;font-size:.85rem;border-radius:999px;padding:2px 12px;margin-bottom:10px}
+section.g h3{font-size:1.25rem;margin:24px 0 8px}
+section.g p{margin:0 0 12px;max-width:68ch}
+.tbl{overflow-x:auto;margin:10px 0 6px;border:2px solid var(--line);border-radius:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.98rem}
+th,td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid color-mix(in srgb,var(--line) 25%,transparent)}
+th{background:var(--teal);color:#f3f5ef;font-weight:600}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0}
+.fit div{border-radius:18px;padding:14px 16px;border:2px solid var(--line)}
+.fit .yes{background:color-mix(in srgb,var(--good) 12%,var(--card))}
+.fit .no{background:color-mix(in srgb,var(--bad) 10%,var(--card))}
+.fit b{display:block;margin-bottom:4px}
+.fit ul{margin:0;padding-inline-start:18px}
+.tip{background:var(--chip);border-radius:16px;padding:12px 16px;margin:14px 0;font-weight:500}
+.tip b{color:var(--accent)}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:12px 0 4px}
+.pk{display:flex;flex-direction:column;border:2px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+.pk .im{aspect-ratio:1;background:#fff;display:grid;place-items:center}
+.pk img{width:100%;height:100%;object-fit:contain}
+.pk .bd{padding:10px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pk .t{font-weight:600;font-size:.95rem;line-height:1.35}
+.pk .t span{background:var(--lime);color:#14181b;border-radius:999px;padding:0 8px;font-size:.78rem;margin-inline-end:4px}
+.pk .m{font-size:.85rem;color:var(--ink-soft)}
+.pk .why{font-size:.85rem;color:var(--good);font-weight:600}
+.pk a{margin-top:auto;text-align:center;text-decoration:none;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:8px}
+.more{display:inline-block;margin-top:14px;font-weight:700;color:var(--ink)}
+footer{border-top:2px solid var(--line);margin-top:30px;padding:22px 0 40px;color:var(--ink-soft);font-size:.92rem}
+footer a{color:var(--ink);font-weight:700}
+@media (max-width:560px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}.pk .t{font-size:.88rem}section.g{box-shadow:4px 4px 0 var(--shadow)}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="home" href="./"><img src="logo.png" alt=""><b>The Bike Shop</b></a>
+  <a class="back" href="./">לחנות ←</a>
+</div></header>
+
+<main class="wrap">
+  <h1>מדריכי קנייה לרוכבים</h1>
+  <p class="lead">לפני שקונים: מה ההבדל בין הסוגים, מה מתאים לכביש, לשטח ולעיר, ומה פחות. בכל מדריך יש את המוצרים שבחרנו מהחנות, מחנויות המותג באלי אקספרס.</p>
+  <nav class="toc" aria-label="מדריכים">
+    <a href="#lights">🔦 פנסים</a>
+    <a href="#computers">📟 מחשבי דרך</a>
+    <a href="#tubes">🛞 פנימיות וטיובלס</a>
+    <a href="#pumps">💨 משאבות ותיקון</a>
+    <a href="#bags">🎒 תיקים</a>
+    <a href="#shorts">🩳 מכנסיים מרופדים</a>
+    <a href="#glasses">🕶️ משקפי רכיבה</a>
+  </nav>
+
+  <!-- 1. פנסים -->
+  <section class="g" id="lights">
+    <span class="k">תאורה ובטיחות</span>
+    <h2>איך בוחרים פנס לאופניים: לראות או להיראות?</h2>
+    <p>לפני שמסתכלים על לומנים, שואלים שאלה אחת: הפנס צריך להאיר לי את הדרך, או רק לדאוג שיראו אותי? ברחוב מואר מספיק להיראות. בכביש חשוך או בשביל, צריך לראות.</p>
+    <h3>כמה לומן צריך?</h3>
+    <div class="tbl"><table>
+      <tr><th>איפה רוכבים</th><th>פנס חזית</th><th>פנס זנב</th></tr>
+      <tr><td>עיר מוארת</td><td>200–400 לומן, מהבהב או קבוע</td><td>פנס זנב רגיל או חכם</td></tr>
+      <tr><td>כביש בין-עירוני בערב</td><td>600–800 לומן, עדיף עם קו חיתוך שלא מסנוור נהגים</td><td>פנס זנב חכם עם בלימה, ושקול רדאר</td></tr>
+      <tr><td>שטח בלילה</td><td>1000 לומן ומעלה, ועוד פנס קטן על הקסדה</td><td>פנס זנב בסיסי מספיק</td></tr>
+      <tr><td>רכיבת יום בכביש</td><td>פנס יום מהבהב</td><td>פנס זנב מהבהב גם ביום</td></tr>
+    </table></div>
+    <h3>מה המילים בדף המוצר אומרות</h3>
+    <p><b>חיישן בלימה (Smart brake):</b> הפנס מרגיש שהאופניים מאטים ומאיר חזק יותר, כמו אור בלם ברכב. זה השדרוג הכי משתלם בפנס זנב.</p>
+    <p><b>קו חיתוך (Cut-off beam):</b> האור יורד לכביש ולא עולה לעיניים של הנהג מולכם. חשוב בכביש, פחות בשטח.</p>
+    <p><b>רדאר:</b> פנס זנב שמזהה רכב שמתקרב מאחור ומתריע על מחשב הדרך. עובד רק עם מחשבי דרך שתומכים ברדאר, אז בודקים את זה בדף המוצר לפני הקנייה.</p>
+    <div class="fit">
+      <div class="yes"><b>✔️ שווה להשקיע</b><ul><li>מי שרוכב בכביש בשעות החשכה</li><li>רכיבת שטח בלילה: שני פנסים, על הכידון ועל הקסדה</li><li>טעינת Type-C, כדי שכל המטענים יתאימו</li></ul></div>
+      <div class="no"><b>✖️ פחות חשוב</b><ul><li>אלפי לומנים לרכיבה בעיר מוארת</li><li>רדאר למי שרוכב רק בשבילים</li><li>פנסים בלי מותג שמבטיחים "10,000 לומן" ב-10$</li></ul></div>
+    </div>
+    <div class="tip"><b>לפי החוק:</b> ברכיבה בחושך חובה פנס לבן קדימה ופנס אדום אחורה. בערב בחורף זה לא אופציונלי.</div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005007822575491:פנס הזנב הנמכר ביותר,1005007628477562:חזית לעיר,1005008639836335:חזית לכביש, לא מסנוור,1005012924098336:חזית חזקה מתחת למחשב,1005010288468134:זנב עם רדאר"></div>
+    <a class="more" href="./#plan/night">לכל ערכת רכיבת הלילה ←</a>
+  </section>
+
+  <!-- 2. מחשבי דרך -->
+  <section class="g" id="computers">
+    <span class="k">מחשבי דרך וחיישנים</span>
+    <h2>טלפון או מחשב דרך? ואיזה מחשב באמת צריך</h2>
+    <p>אפשר לרכוב עם אפליקציה בטלפון, ורבים מתחילים כך. מחשב דרך עושה את אותו הדבר, אבל עם סוללה ל-20 שעות ומעלה, מסך שרואים בשמש, ובלי לסכן את הטלפון בנפילה.</p>
+    <div class="tbl"><table>
+      <tr><th></th><th>טלפון ואפליקציה</th><th>מחשב GPS בסיסי</th><th>מחשב עם ניווט</th></tr>
+      <tr><td>מה רואים</td><td>הכול, על מסך גדול</td><td>מהירות, מרחק, זמן, גובה</td><td>הכול, וגם מסלול ופניות</td></tr>
+      <tr><td>סוללה</td><td>כמה שעות</td><td>עשרות שעות</td><td>עשרות שעות</td></tr>
+      <tr><td>בשמש ובגשם</td><td>חלש</td><td>מצוין</td><td>מצוין</td></tr>
+      <tr><td>חיישנים</td><td>חלקית</td><td>כן</td><td>כן</td></tr>
+      <tr><td>מתאים ל</td><td>מתחילים, רכיבות קצרות</td><td>רוב הרוכבים</td><td>טיולים ומסלולים חדשים</td></tr>
+    </table></div>
+    <h3>חיישנים: מה כל אחד נותן</h3>
+    <p><b>מהירות וקדנס:</b> מהירות מדויקת גם בלי GPS, למשל ביער או על טריינר בבית, וקצב דיווש. זול ושימושי.</p>
+    <p><b>מד דופק:</b> רצועת חזה מדויקת יותר ומגיבה מהר. מד לזרוע נוח יותר ומתאים למי שלא אוהב רצועה.</p>
+    <p><b>מד הספק:</b> מודד וואטים. מיועד לרוכבים שמתאמנים לפי תוכנית. לרוב הרוכבים זה מיותר.</p>
+    <div class="tip"><b>טיפ:</b> מחפשים "ANT+ ו-Bluetooth" ביחד. כך החיישן יעבוד עם כל מחשב, עם הטלפון ועם אפליקציות אימון כמו Zwift.</div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005006068532849:מחשב בסיסי, הכי פשוט,1005006304312199:עם ניווט במסלול,1005006082869759:הכי חסכוני,1005005481362081:חיישן מהירות וקדנס,1005004995235263:רצועת דופק,1005006490267843:מד דופק לזרוע"></div>
+    <a class="more" href="./#computers">לכל מחשבי הדרך והחיישנים ←</a>
+  </section>
+
+  <!-- 3. פנימיות -->
+  <section class="g" id="tubes">
+    <span class="k">צמיגים ופנימיות</span>
+    <h2>פנימית רגילה, TPU או טיובלס: מה מתאים לכם?</h2>
+    <p>פנצ'ר הוא התקלה הכי נפוצה ברכיבה, ובשבילי ישראל, עם הקוצים של הקיץ, הוא כמעט מובטח. הבחירה בין שלושת הסוגים קובעת כמה פנצ'רים יהיו וכמה קל לתקן.</p>
+    <div class="tbl"><table>
+      <tr><th></th><th>פנימית רגילה (גומי)</th><th>פנימית TPU</th><th>טיובלס, בלי פנימית</th></tr>
+      <tr><td>משקל</td><td>כבדה יותר</td><td>קלה מאוד, תופסת מעט מקום</td><td>אין פנימית, יש נוזל אוטם</td></tr>
+      <tr><td>מחיר</td><td>הכי זולה</td><td>יקרה יותר</td><td>דורשת חישוק וצמיג מתאימים</td></tr>
+      <tr><td>קוצים</td><td>פגיעה</td><td>פגיעה</td><td>הנוזל סוגר חורים קטנים לבד</td></tr>
+      <tr><td>תיקון בדרך</td><td>טלאי רגיל</td><td>צריך טלאים מיוחדים ל-TPU</td><td>פתיל תיקון</td></tr>
+      <tr><td>מתאים ל</td><td>עיר, יום-יום, ילדים</td><td>כביש וגראבל, ופנימית רזרבית בתיק</td><td>שטח בישראל</td></tr>
+    </table></div>
+    <div class="fit">
+      <div class="yes"><b>✔️ ההמלצה שלנו</b><ul><li>שטח: טיובלס, או פנימית עם סרט הגנה בתוך הצמיג</li><li>כביש: פנימית רגילה בגלגל, ופנימית TPU רזרבית בתיק</li><li>תמיד פנימית רזרבית אחת, גם עם טיובלס</li></ul></div>
+      <div class="no"><b>✖️ שימו לב</b><ul><li>בבלמי חישוק בירידות ארוכות החישוק מתחמם, וחלק מפנימיות ה-TPU לא מתאימות לזה. בודקים בדף המוצר</li><li>נוזל טיובלס מתייבש, וצריך לחדש אותו כל כמה חודשים</li></ul></div>
+    </div>
+    <h3>איך יודעים איזו מידה לקנות</h3>
+    <p>המידה כתובה על דופן הצמיג: בכביש בדרך כלל <bdi dir="ltr">700x25C</bdi> או <bdi dir="ltr">700x28C</bdi>, ובשטח <bdi dir="ltr">29x2.25</bdi> או <bdi dir="ltr">27.5x2.4</bdi>. קונים פנימית שהטווח שלה כולל את המידה הזו.</p>
+    <p><b>ונטיל צרפתי (פרסטה):</b> דק וארוך, נפוץ בכביש ובשטח. <b>ונטיל אמריקאי (שרדר):</b> כמו ברכב, נפוץ באופני עיר וילדים. קונים לפי החור בחישוק, ומתאם קטן מאפשר לנפח צרפתי במשאבה של תחנת דלק.</p>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005008848657268:רגילה לכביש,1005006628942546:רגילה לשטח,1005010335878916:TPU לכביש,1005010802170331:TPU ל-29,1005007542279206:סרט נגד קוצים,1005005974866818:מתאם ונטיל"></div>
+    <a class="more" href="./#tires">לכל הצמיגים והפנימיות ←</a>
+  </section>
+
+  <!-- 4. משאבות -->
+  <section class="g" id="pumps">
+    <span class="k">ניפוח ותיקון</span>
+    <h2>משאבה חשמלית או משאבת יד? ומה חייב להיות בתיק</h2>
+    <div class="tbl"><table>
+      <tr><th></th><th>משאבה חשמלית קטנה</th><th>משאבת יד</th><th>משאבה לבולמים</th></tr>
+      <tr><td>מאמץ</td><td>אין, לוחצים על כפתור</td><td>הרבה, בעיקר בלחץ של כביש</td><td>מעט</td></tr>
+      <tr><td>מד לחץ</td><td>דיגיטלי, עוצרת לבד בלחץ שבחרתם</td><td>רק בחלק מהדגמים</td><td>מדויק</td></tr>
+      <tr><td>משקל וגודל</td><td>כמו טלפון קטן</td><td>הכי קלה</td><td>קטנה</td></tr>
+      <tr><td>חיסרון</td><td>צריך לזכור לטעון</td><td>לוקח זמן</td><td>רק לבולמי אוויר, לא לצמיגים</td></tr>
+      <tr><td>מתאים ל</td><td>מי שרוצה פתרון אחד לבית ולדרך</td><td>תיק קל, רוכבים שחוסכים במשקל</td><td>אופני שטח עם בולמי אוויר</td></tr>
+    </table></div>
+    <h3>ערכת התיקון המינימלית לתיק האוכף</h3>
+    <p>פנימית רזרבית, שני מנופי צמיג, משאבה, טלאים, ומולטיטול עם מפרק שרשרת וחוליה מהירה. כל זה נכנס בתיק אוכף קטן, ומחזיר אתכם הביתה כמעט מכל תקלה.</p>
+    <div class="tip"><b>טיפ:</b> אם אתם לא בטוחים בלחץ, הוא כתוב על דופן הצמיג, בטווח מינימום ומקסימום. בשטח מורידים לקצה התחתון בשביל אחיזה, ובכביש מעלים בשביל מהירות.</div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005010287685046:חשמלית, עוצרת לבד,1005008114091855:יד עם מד לחץ,1005008107321918:לבולמי אוויר,1005011596788538:תיק אוכף לערכה,1005005119033212:מנופי צמיג,1005008561994201:טלאים בלי דבק"></div>
+    <a class="more" href="./#pumps">לכל המשאבות וערכות התיקון ←</a>
+  </section>
+
+  <!-- 5. תיקים -->
+  <section class="g" id="bags">
+    <span class="k">תיקים ובייקפאקינג</span>
+    <h2>איזה תיק לאיזו רכיבה: איפה שמים מה</h2>
+    <p>כל מקום באופניים מתאים לסוג אחר של ציוד. הכלל: דברים כבדים כמה שיותר נמוך ובאמצע האופניים, ודברים שצריך תוך כדי רכיבה, קרוב לידיים.</p>
+    <div class="tbl"><table>
+      <tr><th>סוג התיק</th><th>מה שמים בו</th><th>מתאים ל</th><th>פחות מתאים ל</th></tr>
+      <tr><td>תיק אוכף קטן</td><td>פנימית, מנופים, כלים</td><td>כל רוכב, בעיקר כביש</td><td>–</td></tr>
+      <tr><td>תיק צינור עליון</td><td>טלפון, חטיפים, מפתחות</td><td>כביש וגראבל</td><td>אופניים עם שלדה קטנה מאוד</td></tr>
+      <tr><td>תיק משולש לשלדה</td><td>ציוד כבד, ביגוד</td><td>גראבל ובייקפאקינג</td><td>מי שצריך מקום לשני בקבוקים</td></tr>
+      <tr><td>תיק כידון</td><td>ציוד גדול וקל, מעיל</td><td>עיר וטיולים</td><td>שטח טכני, משקל על הכידון מכביד על ההיגוי</td></tr>
+      <tr><td>תיק גב עם שקית מים</td><td>2 ליטר מים ויותר, כלים</td><td>שטח, רכיבות ארוכות בקיץ</td><td>כביש, מחמם את הגב</td></tr>
+      <tr><td>תיק צד לסבל</td><td>קניות, מחשב, בגדים להחלפה</td><td>נסיעה לעבודה, טיולים</td><td>אופניים בלי סבל</td></tr>
+      <tr><td>תיק אוכף גדול ותיק מזלג</td><td>שק שינה, ציוד ללילה</td><td>בייקפאקינג</td><td>רכיבה יומית</td></tr>
+    </table></div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005011596788538:תיק אוכף לכל רוכב,1005008196120507:צינור עליון קל,1005007545337875:משולש לבייקפאקינג,1005008557451110:כידון לעיר,1005007473542036:גב עם שקית מים לשטח,1005007307189141:תיק צד לסבל"></div>
+    <a class="more" href="./#bags">לכל התיקים ←</a>
+  </section>
+
+  <!-- 6. מכנסיים -->
+  <section class="g" id="shorts">
+    <span class="k">ביגוד</span>
+    <h2>מכנסיים מרופדים: ביב, קצרים או תחתון מרופד?</h2>
+    <p>הריפוד הוא החלק הכי חשוב בביגוד רכיבה. הוא מונע שפשופים ולחץ, וההבדל מורגש כבר אחרי שעה של רכיבה.</p>
+    <div class="tbl"><table>
+      <tr><th></th><th>מכנסי ביב (עם כתפיות)</th><th>מכנסיים קצרים</th><th>תחתון מרופד + מכנס שטח</th></tr>
+      <tr><td>יתרון</td><td>לא זזים ולא לוחצים במותן</td><td>פשוטים ללבישה, זולים יותר</td><td>נראה כמו מכנס רגיל</td></tr>
+      <tr><td>חיסרון</td><td>פחות נוחים לעצירה בשירותים</td><td>יכולים לגלוש ברכיבה ארוכה</td><td>חם יותר בקיץ</td></tr>
+      <tr><td>מתאים ל</td><td>כביש, רכיבות של יותר משעתיים</td><td>רכיבות קצרות, עיר</td><td>שטח, אופניים חשמליים</td></tr>
+    </table></div>
+    <h3>איך בוחרים ושומרים</h3>
+    <p><b>הריפוד קובע:</b> ריפוד מותג מוכר, כמו Elastic Interface האיטלקי, מחזיק יותר טוב ברכיבות ארוכות. ריפוד ג'ל מספיק לרכיבות של עד שעה או שעתיים. מספרים כמו "5D" הם בעיקר שיווק.</p>
+    <p><b>מידה:</b> המידות באלי אקספרס קטנות. מודדים מותן וירכיים בס"מ ובודקים בטבלת המידות של היצרן, ולרוב עולים מידה או שתיים.</p>
+    <p><b>לובשים בלי תחתונים,</b> מכבסים אחרי כל רכיבה ומייבשים באוויר. מחליפים כשהריפוד נמעך או כשהבד נהיה דק ושקוף.</p>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005013012122799:ביב עם ריפוד איטלקי,1005006820907190:ביב בלי תפרים,32827067778:קצרים עם ג'ל,1005005995990065:תחתון מרופד,1005007066736977:מכנס שטח רחב,1005006139455694:לנשים"></div>
+    <a class="more" href="./#wear">לכל הביגוד ←</a>
+  </section>
+
+  <!-- 7. משקפיים -->
+  <section class="g" id="glasses">
+    <span class="k">משקפיים</span>
+    <h2>משקפי רכיבה: מקוטבים או פוטוכרומיים?</h2>
+    <p>משקפי רכיבה מגינים מפני שמש, אבק, חרקים וענפים. ההבדל בין הסוגים הוא בעדשה.</p>
+    <div class="tbl"><table>
+      <tr><th></th><th>מקוטבים</th><th>פוטוכרומיים (מתכהים בשמש)</th><th>עם מסגרת לעדשות ראייה</th></tr>
+      <tr><td>במה טובים</td><td>מורידים סנוור מהכביש</td><td>מתאימים את עצמם לאור: בהירים בבוקר, כהים בצהריים</td><td>למי שמרכיב משקפיים</td></tr>
+      <tr><td>חיסרון</td><td>כהים מדי בערב ובשטח מוצל</td><td>לוקח להם רגע להתבהר בכניסה לצל</td><td>צריך להכין עדשות אצל אופטיקאי</td></tr>
+      <tr><td>מתאים ל</td><td>כביש ביום</td><td>רכיבה מבוקר עד ערב, שטח עם צל</td><td>כל רכיבה</td></tr>
+    </table></div>
+    <div class="tip"><b>טיפ:</b> UV400 הוא הסימון שחשוב, והוא מופיע בכל הדגמים שבחרנו. ברכיבת לילה עדיף עדשה שקופה או פוטוכרומית, ולא כהה.</div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005008153479697:מקוטבים,1005008223320293:פוטוכרומיים,1005008408443514:עם מסגרת לעדשות ראייה,1005005244562338:מקוטבים קלים"></div>
+    <a class="more" href="./#wear">לכל המשקפיים והביגוד ←</a>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <p><a href="./">לחנות The Bike Shop</a> · <a href="how-to-buy.html">איך קונים נכון באלי אקספרס</a></p>
+  <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר, אלי אקספרס תשלם לנו עמלה קטנה. המחיר שלכם לא משתנה.</p>
+  <p id="checked">המחירים, הדירוגים ומספר המכירות מתעדכנים כל שבוע ויכולים להשתנות. המחיר הקובע הוא המחיר בדף המוצר בזמן הרכישה.</p>
+  <p>© <span id="year">2026</span> The Bike Shop</p>
+</div></footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function imgFail(el){
+  if (!el.dataset.alt && /aliexpress-media\.com\/kf\//.test(el.src)) { el.dataset.alt = 1; el.src = el.src.replace(/^https?:\/\/[^/]+\/kf\//, 'https://ae01.alicdn.com/kf/'); return; }
+  el.onerror = null; el.src = 'logo.png';
+}
+fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(db => {
+  const byId = Object.fromEntries(db.products.filter(p => !p.status).map(p => [p.id, p]));
+  document.querySelectorAll('.picks').forEach(box => {
+    box.innerHTML = box.dataset.ids.split(',').map(x => {
+      const i = x.indexOf(':'); const id = x.slice(0, i), why = x.slice(i + 1);
+      const p = byId[id]; if (!p) return '';
+      return `<div class="pk"><div class="im">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : ''}</div>
+        <div class="bd"><span class="why">${esc(why)}</span><div class="t"><span>${esc(p.brand)}</span>${esc(p.title)}</div>
+        <div class="m">${p.rating}% חיובי · ${Number(p.sold).toLocaleString('he-IL')} נמכרו · ${p.variant ? 'כ־' : 'החל מ־'}<bdi dir="ltr">${Math.round(p.price)}$</bdi></div>
+        <a href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה ←</a></div></div>`;
+    }).join('');
+  });
+}).catch(() => document.querySelectorAll('.picks').forEach(b => b.innerHTML = '<p>המוצרים נמצאים בחנות.</p>'));
+</script>
+</body>
+</html>
