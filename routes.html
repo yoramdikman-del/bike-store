@@ -93,6 +93,29 @@ footer a{color:var(--ink);font-weight:700}
 .dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-inline-end:6px;vertical-align:middle;border:1px solid #14181b}
 section.g.hide{display:none}
 @media (max-width:560px){#map{height:320px;box-shadow:4px 4px 0 var(--shadow)}}
+.out{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.out button{font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;border:2px solid var(--line);border-radius:999px;padding:7px 16px;background:var(--card);color:var(--ink)}
+.out button.pdf{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+body.prep #map{width:700px!important;height:435px!important;max-width:100%}
+.out small{flex-basis:100%;color:var(--ink-soft);font-size:.85rem}
+.ponly{display:none}
+@media print{
+  @page{size:A4;margin:12mm}
+  :root{--paper:#fff;--card:#fff;--ink:#000;--ink-soft:#333;--line:#000;--shadow:transparent}
+  body{font-size:11pt;line-height:1.45;background:#fff;color:#000;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  header,.lv,.out,.picks,h3.take,.rt .acts,footer,#before .more{display:none!important}
+  .ponly{display:block}
+  h1{margin:0 0 4px;font-size:20pt}
+  .lead{font-size:10pt;margin:0 0 8px}
+  #map{height:115mm;width:100%;box-shadow:none;border:1.5px solid #000;border-radius:8px;margin:0 0 4px}
+  .leaflet-control-zoom{display:none}
+  .mapnote{margin:0 0 10px}
+  section.g{box-shadow:none;border:1.5px solid #000;border-radius:10px;padding:10px 14px;margin:0 0 10px;break-inside:auto}
+  .routes{grid-template-columns:repeat(2,1fr);gap:8px}
+  .rt{break-inside:avoid;border-width:1px;padding:8px 10px}
+  .rt .ponly{font-size:8.5pt;color:#333;direction:ltr;text-align:right}
+  #before{break-before:auto}
+}
 </style>
 </head>
 <body>
@@ -103,57 +126,63 @@ section.g.hide{display:none}
 
 <main class="wrap">
   <h1>מסלולי אופניים לפי רמת קושי</h1>
+  <p class="ponly" style="margin:0 0 4px">The Bike Shop · myripo.com/bike-store/routes.html</p>
   <p class="lead">מהטיילת הראשונה עם הילדים ועד הסינגל השחור הראשון בארץ. בוחרים רמה, רואים על המפה איפה זה, ולוחצים לניווט. לכל רמה הוספנו גם מה כדאי לקחת.</p>
   <nav class="lv" aria-label="רמת קושי"><button type="button" data-f="all" aria-pressed="true">הכול</button><button type="button" data-f="kids" aria-pressed="false">👶 ילדים</button><button type="button" data-f="family" aria-pressed="false">👨‍👩‍👧 משפחות</button><button type="button" data-f="easy" aria-pressed="false">🟢 קל</button><button type="button" data-f="medium" aria-pressed="false">🔵 בינוני</button><button type="button" data-f="hard" aria-pressed="false">🔴 קשה</button><button type="button" data-f="extreme" aria-pressed="false">⚫ מאתגר</button></nav>
   <div id="map" role="region" aria-label="מפת מסלולים"></div>
   <p class="mapnote">הנקודות מסמנות את אזור תחילת המסלול, לא את התוואי המדויק. את השביל עצמו עוקבים לפי הסימון בשטח ולפי שילוט קק"ל.</p>
+  <div class="out">
+    <button type="button" class="pdf" data-out="pdf">📄 שמירת המפה כ-PDF</button>
+    <button type="button" data-out="print">🖨️ הדפסה</button>
+    <small id="outhint">מודפסת הרמה שבחרתם בסינון, עם המפה ופרטי המסלולים.</small>
+  </div>
   
   <section class="g" id="kids" data-lv="kids">
     <span class="k">👶 ילדים</span>
     <h2>מסלולים ברמת ילדים</h2>
     <p>רכיבה ראשונה בחוץ: שבילים סלולים או מישוריים, בלי תנועה, עם הרבה עצירות. מתאים לאופניים עם גלגלי עזר ולאופני איזון.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>פארק הירקון, תל אביב</h3><div class="meta">2–30 ק&quot;מ, מעגלי · מרכז</div><p>שבילים סלולים ומשולטים בין מדשאות, עם כמה מסלולים מעגליים קצרים. מתאים גם לעגלות ולכיסאות ילדים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.0995,34.813&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.calcalist.co.il/local/articles/0,7340,L-3384804,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>הפארק האקולוגי, הוד השרון</h3><div class="meta">2 או 6.5 ק&quot;מ · שרון</div><p>שביל מישורי לחלוטין סביב אגם, ונגיש גם לעגלות. יש גם שביל אופניים לאורך נחל הדר.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.141,34.905&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/728" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>טיילת ראש הנקרה–אכזיב</h3><div class="meta">כ-5 ק&quot;מ · גליל מערבי</div><p>טיילת לאורך החוף עם נוף פתוח לים. שטוחה ונוחה לרכיבה ראשונה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.065,35.106&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/טיולי_אופניים_עם_ילדים_רעיונות_למסלולים_לרכיבה_מ.asp" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>פארק הירקון, תל אביב</h3><div class="meta">2–30 ק&quot;מ, מעגלי · מרכז</div><p>שבילים סלולים ומשולטים בין מדשאות, עם כמה מסלולים מעגליים קצרים. מתאים גם לעגלות ולכיסאות ילדים.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.10, 34.81</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.0995,34.813&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.calcalist.co.il/local/articles/0,7340,L-3384804,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>הפארק האקולוגי, הוד השרון</h3><div class="meta">2 או 6.5 ק&quot;מ · שרון</div><p>שביל מישורי לחלוטין סביב אגם, ונגיש גם לעגלות. יש גם שביל אופניים לאורך נחל הדר.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.14, 34.91</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.141,34.905&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/728" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>טיילת ראש הנקרה–אכזיב</h3><div class="meta">כ-5 ק&quot;מ · גליל מערבי</div><p>טיילת לאורך החוף עם נוף פתוח לים. שטוחה ונוחה לרכיבה ראשונה.</p><div class="ponly">📍 אזור ההתחלה בערך: 33.06, 35.11</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.065,35.106&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/טיולי_אופניים_עם_ילדים_רעיונות_למסלולים_לרכיבה_מ.asp" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005006955230853:פנימית לגלגלים קטנים,1005006837410945:בקבוק רך לילד,1005007821844814:פנס קטן לקסדה,1005008134209479:מנעול לעצירות"></div>
   </section>
   <section class="g" id="family" data-lv="family">
     <span class="k">👨‍👩‍👧 משפחות</span>
     <h2>מסלולים ברמת משפחות</h2>
     <p>שטח ראשון לכל המשפחה: דרכי עפר רחבות, עליות מתונות, וחניון עם שירותים ומים בסוף.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>יער בארי – המסלול הכתום</h3><div class="meta">כ-7 ק&quot;מ, מעגלי · נגב מערבי</div><p>המסלול שמומלץ למשפחות שיוצאות לשטח בפעם הראשונה. בחורף ובאביב מלא כלניות.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.422,34.492&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/%D7%99%D7%A2%D7%A8_%D7%91%D7%90%D7%A8%D7%99.asp" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>סובב יער אודם</h3><div class="meta">מעגלי · רמת הגולן</div><p>רובו על שבילי ג׳יפים רחבים, ומתאים גם למתחילים. קריר בקיץ, ולפעמים מושלג בחורף.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.19,35.75&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>יער בארי – המסלול הכתום</h3><div class="meta">כ-7 ק&quot;מ, מעגלי · נגב מערבי</div><p>המסלול שמומלץ למשפחות שיוצאות לשטח בפעם הראשונה. בחורף ובאביב מלא כלניות.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="ponly">📍 אזור ההתחלה בערך: 31.42, 34.49</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.422,34.492&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/%D7%99%D7%A2%D7%A8_%D7%91%D7%90%D7%A8%D7%99.asp" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>סובב יער אודם</h3><div class="meta">מעגלי · רמת הגולן</div><p>רובו על שבילי ג׳יפים רחבים, ומתאים גם למתחילים. קריר בקיץ, ולפעמים מושלג בחורף.</p><div class="ponly">📍 אזור ההתחלה בערך: 33.19, 35.75</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.19,35.75&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005008195919743:מנשא בקבוק,1005008555205373:בקבוק 750 מ&quot;ל,1005010287685046:משאבה לכל המשפחה,1005008513762083:כפפות"></div>
   </section>
   <section class="g" id="easy" data-lv="easy">
     <span class="k">🟢 קל</span>
     <h2>מסלולים ברמת קל</h2>
     <p>סינגל ראשון למבוגרים: שביל צר, אבל בלי מכשולים טכניים. מתאים לאופני שטח בסיסיים ולכושר של שעה-שעתיים.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל הרצל (ברוטיה), יער בן שמן</h3><div class="meta">כ-10.5 ק&quot;מ, מעגלי, כחול · מרכז</div><p>הסינגל הכי מוכר למתחילים במרכז. לא קשה פיזית ולא טכני, ועובר בין אורנים ואקליפטוסים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.955,34.935&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל יער יד מרדכי</h3><div class="meta">20 ק&quot;מ, שלוש טבעות · נגב צפוני</div><p>סינגל של קק&quot;ל שנפתח במרץ 2025, ומותאם לרמת רכיבה בסיסית. אפשר לקצר לטבעת אחת.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.585,34.56&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ias.co.il/?p=170229" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>מסלול מעגלי, שדה בוקר</h3><div class="meta">7 ק&quot;מ, עד שעתיים · נגב</div><p>מסלול קל במדבר, שיוצא מתחנת הדלק של מדרשת בן-גוריון. לרכוב רק בחורף ובשעות הבוקר.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=30.85,34.78&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל הרצל (ברוטיה), יער בן שמן</h3><div class="meta">כ-10.5 ק&quot;מ, מעגלי, כחול · מרכז</div><p>הסינגל הכי מוכר למתחילים במרכז. לא קשה פיזית ולא טכני, ועובר בין אורנים ואקליפטוסים.</p><div class="ponly">📍 אזור ההתחלה בערך: 31.95, 34.94</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.955,34.935&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל יער יד מרדכי</h3><div class="meta">20 ק&quot;מ, שלוש טבעות · נגב צפוני</div><p>סינגל של קק&quot;ל שנפתח במרץ 2025, ומותאם לרמת רכיבה בסיסית. אפשר לקצר לטבעת אחת.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="ponly">📍 אזור ההתחלה בערך: 31.59, 34.56</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.585,34.56&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ias.co.il/?p=170229" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>מסלול מעגלי, שדה בוקר</h3><div class="meta">7 ק&quot;מ, עד שעתיים · נגב</div><p>מסלול קל במדבר, שיוצא מתחנת הדלק של מדרשת בן-גוריון. לרכוב רק בחורף ובשעות הבוקר.</p><div class="ponly">📍 אזור ההתחלה בערך: 30.85, 34.78</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=30.85,34.78&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005006068532849:לדעת כמה רכבתם,1005011596788538:תיק אוכף לערכה,1005005119033212:מנופי צמיג,1005008561994201:טלאים בלי דבק"></div>
   </section>
   <section class="g" id="medium" data-lv="medium">
     <span class="k">🔵 בינוני</span>
     <h2>מסלולים ברמת בינוני</h2>
     <p>רוכבים שכבר רוכבים בקביעות: עליות של ממש, מדרגות סלע קטנות, ו-20 ק&quot;מ ומעלה.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגל יער בית קשת</h3><div class="meta">22 ק&quot;מ · גליל תחתון</div><p>נחשב לאחד הסינגלים הטובים בארץ. שביל צר, 20 עד 50 ס&quot;מ, בין עצי אלון.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.71,35.4&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ynet.co.il/articles/0,7340,L-3694927,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגלים ענבה וחדיד, בן שמן</h3><div class="meta">חדיד כ-11 ק&quot;מ · מרכז</div><p>ההמשך הטבעי אחרי סינגל הרצל. בחדיד יש כמה מדרגות סלע שדורשות ניסיון.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.95,34.96&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>שביל ישראל לאופניים – הקטע הדרומי</h3><div class="meta">85 ק&quot;מ, יומיים · אילת</div><p>ממעלה שחרות דרך תמנע עד אילת. טכנית בינוני, אבל ארוך: צריך לתכנן מים ולינה בתמנע.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=29.92,35.03&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/221" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגל יער בית קשת</h3><div class="meta">22 ק&quot;מ · גליל תחתון</div><p>נחשב לאחד הסינגלים הטובים בארץ. שביל צר, 20 עד 50 ס&quot;מ, בין עצי אלון.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.71, 35.40</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.71,35.4&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ynet.co.il/articles/0,7340,L-3694927,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגלים ענבה וחדיד, בן שמן</h3><div class="meta">חדיד כ-11 ק&quot;מ · מרכז</div><p>ההמשך הטבעי אחרי סינגל הרצל. בחדיד יש כמה מדרגות סלע שדורשות ניסיון.</p><div class="ponly">📍 אזור ההתחלה בערך: 31.95, 34.96</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.95,34.96&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>שביל ישראל לאופניים – הקטע הדרומי</h3><div class="meta">85 ק&quot;מ, יומיים · אילת</div><p>ממעלה שחרות דרך תמנע עד אילת. טכנית בינוני, אבל ארוך: צריך לתכנן מים ולינה בתמנע.</p><div class="ponly">📍 אזור ההתחלה בערך: 29.92, 35.03</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=29.92,35.03&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/221" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005006304312199:ניווט במסלול,1005007542279206:סרט נגד קוצים,1005008114091855:משאבת יד עם מד,1005009411115035:שקית מים 2 ליטר"></div>
   </section>
   <section class="g" id="hard" data-lv="hard">
     <span class="k">🔴 קשה</span>
     <h2>מסלולים ברמת קשה</h2>
     <p>טיפוסים תלולים, פיתולים חדים ומקטעים טכניים. כושר טוב ושליטה מלאה באופניים.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער טורען</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>פיתולים חדים וזוויות תלולות. לא סינגל של מהירות, אלא של שליטה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.78,35.36&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער שגב</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>מקטעים מהירים בהתחלה, ואחריהם עלייה אינטנסיבית וארוכה. שתי מבואות כניסה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.86,35.25&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.weekend.co.il/article.aspx?id=750" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער טורען</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>פיתולים חדים וזוויות תלולות. לא סינגל של מהירות, אלא של שליטה.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.78, 35.36</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.78,35.36&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער שגב</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>מקטעים מהירים בהתחלה, ואחריהם עלייה אינטנסיבית וארוכה. שתי מבואות כניסה.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.86, 35.25</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.86,35.25&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.weekend.co.il/article.aspx?id=750" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005007473542036:תיק גב עם מים,1005011999971800:כפפות בולמות,1005008107321918:משאבה לבולמים,1005006628942546:פנימית לשטח"></div>
   </section>
   <section class="g" id="extreme" data-lv="extreme">
     <span class="k">⚫ מאתגר</span>
     <h2>מסלולים ברמת מאתגר</h2>
     <p>הדרגה הגבוהה ביותר: ירידות סלע, מקפצות וברמים. רק לרוכבים מנוסים עם מיגון מלא.</p>
-    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל קולה – המסלול השחור</h3><div class="meta">כ-4 ק&quot;מ, עם כיוון השעון · מרכז</div><p>המסלול הראשון בארץ שסומן בשחור: טיפוסים קצרים ותלולים, ירידות סלע, מקפצה וברמים. יש מעקפים אדומים, אבל גם הם טכניים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.02,34.95&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/3109/-537" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל אלון, יער להב</h3><div class="meta">יער להב · נגב צפוני</div><p>זרימה מהירה לרוכבים ברמה גבוהה, וברמים ומקפצות למתקדמים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.38,34.87&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div></div>
-    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל קולה – המסלול השחור</h3><div class="meta">כ-4 ק&quot;מ, עם כיוון השעון · מרכז</div><p>המסלול הראשון בארץ שסומן בשחור: טיפוסים קצרים ותלולים, ירידות סלע, מקפצה וברמים. יש מעקפים אדומים, אבל גם הם טכניים.</p><div class="ponly">📍 אזור ההתחלה בערך: 32.02, 34.95</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.02,34.95&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/3109/-537" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל אלון, יער להב</h3><div class="meta">יער להב · נגב צפוני</div><p>זרימה מהירה לרוכבים ברמה גבוהה, וברמים ומקפצות למתקדמים.</p><div class="ponly">📍 אזור ההתחלה בערך: 31.38, 34.87</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.38,34.87&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3 class="take">מה לקחת לרכיבה כזו</h3>
     <div class="picks" data-ids="1005010802170331:פנימית TPU רזרבית,1005012038346610:קפסולת כלים,1005004995235263:רצועת דופק,1005005481362081:חיישן מהירות"></div>
   </section>
 
@@ -206,7 +235,7 @@ try {
   markers = PTS.map(p => L.circleMarker([p.lat, p.lng], {radius:9, color:'#14181b', weight:2, fillColor:p.c, fillOpacity:.95})
     .bindPopup(`<b>${esc(p.n)}</b><br>${esc(p.ln)}<br><a href="#${p.lv}">לפרטים ←</a>`).addTo(map));
 } catch(e) { document.getElementById('map').style.display = 'none'; }
-function filt(f) {
+var filt = function(f) {
   document.querySelectorAll('.lv button').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
   document.querySelectorAll('section.g[data-lv]').forEach(s => s.classList.toggle('hide', f !== 'all' && s.dataset.lv !== f));
   if (!map) return;
@@ -215,6 +244,32 @@ function filt(f) {
   if (shown.length) map.fitBounds(shown, {padding:[40,40], maxZoom:11});
 }
 document.querySelectorAll('.lv button').forEach(b => b.onclick = () => { filt(b.dataset.f); history.replaceState(null, '', b.dataset.f === 'all' ? location.pathname : '#' + b.dataset.f); });
+
+let curF = 'all';
+const _filt = filt;
+filt = f => { curF = f; _filt(f); };
+function prepAndPrint(kind) {
+  const hint = document.getElementById('outhint');
+  hint.textContent = kind === 'pdf'
+    ? 'בחלון שנפתח, בוחרים "שמירה כ-PDF" (Save as PDF) כיעד ההדפסה.'
+    : 'מכינים את המפה להדפסה...';
+  const go = () => setTimeout(() => window.print(), 300);
+  if (!map) return go();
+  document.body.classList.add('prep');
+  map.invalidateSize();
+  filt(curF);
+  let done = false;
+  const fin = () => { if (done) return; done = true; go(); };
+  map.eachLayer(l => { if (l instanceof L.TileLayer) l.once('load', fin); });
+  setTimeout(fin, 2500);
+}
+window.addEventListener('afterprint', () => {
+  if (!document.body.classList.contains('prep')) return;
+  document.body.classList.remove('prep');
+  if (map) { map.invalidateSize(); filt(curF); }
+  document.getElementById('outhint').textContent = 'מודפסת הרמה שבחרתם בסינון, עם המפה ופרטי המסלולים.';
+});
+document.querySelectorAll('.out button').forEach(b => b.onclick = () => prepAndPrint(b.dataset.out));
 const h = location.hash.slice(1); if (PTS.some(p => p.lv === h)) filt(h); else filt('all');
 </script>
 </body>
