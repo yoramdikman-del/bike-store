@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>מסלולי אופניים לפי רמת קושי – The Bike Shop</title>
+<meta name="description" content="מסלולי אופניים בישראל לפי רמת קושי: ילדים, משפחות, קל, בינוני, קשה ומאתגר. מפה, אורך, אזור, ניווט, ומה לקחת לכל רכיבה.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Layout: long-read guides – sticky header, chip TOC, one bordered section per guide with a comparison table and product picks */
+:root{
+  --paper:#eef1ea; --ink:#14181b; --ink-soft:#3c454b; --line:#14181b;
+  --card:#ffffff; --accent:#e8590c; --accent-ink:#ffffff; --chip:#dfe5d6;
+  --good:#1b6b4a; --bad:#a3321b; --teal:#1d3a46; --lime:#c9e43a; --shadow:#14181b;
+  --f:"Fredoka","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.65}
+.wrap{max-width:980px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--line)}
+.bar{display:flex;align-items:center;gap:12px;padding-block:10px}
+.bar a.home{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.bar img{width:44px;height:44px;border-radius:50%;flex:none}
+.bar b{font-weight:700;font-size:1.15rem}
+.bar .back{margin-inline-start:auto;flex:none;text-decoration:none;font-weight:600;color:var(--accent-ink);background:var(--accent);padding:7px 14px;border-radius:999px;font-size:.92rem}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:34px 0 8px}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch;margin:0 0 20px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+nav.toc a{text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.95rem}
+nav.toc a:hover{background:var(--lime);color:#14181b}
+section.g{background:var(--card);border:3px solid var(--line);border-radius:28px;box-shadow:6px 6px 0 var(--shadow);padding:clamp(20px,4vw,34px);margin:0 0 34px;scroll-margin-top:80px}
+section.g h2{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:0 0 6px}
+.k{display:inline-block;background:var(--lime);color:#14181b;font-weight:700;font-size:.85rem;border-radius:999px;padding:2px 12px;margin-bottom:10px}
+section.g h3{font-size:1.25rem;margin:24px 0 8px}
+section.g p{margin:0 0 12px;max-width:68ch}
+.tbl{overflow-x:auto;margin:10px 0 6px;border:2px solid var(--line);border-radius:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.98rem}
+th,td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid color-mix(in srgb,var(--line) 25%,transparent)}
+th{background:var(--teal);color:#f3f5ef;font-weight:600}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0}
+.fit div{border-radius:18px;padding:14px 16px;border:2px solid var(--line)}
+.fit .yes{background:color-mix(in srgb,var(--good) 12%,var(--card))}
+.fit .no{background:color-mix(in srgb,var(--bad) 10%,var(--card))}
+.fit b{display:block;margin-bottom:4px}
+.fit ul{margin:0;padding-inline-start:18px}
+.tip{background:var(--chip);border-radius:16px;padding:12px 16px;margin:14px 0;font-weight:500}
+.tip b{color:var(--accent)}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:12px 0 4px}
+.pk{display:flex;flex-direction:column;border:2px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+.pk .im{aspect-ratio:1;background:#fff;display:grid;place-items:center}
+.pk img{width:100%;height:100%;object-fit:contain}
+.pk .bd{padding:10px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pk .t{font-weight:600;font-size:.95rem;line-height:1.35}
+.pk .t span{background:var(--lime);color:#14181b;border-radius:999px;padding:0 8px;font-size:.78rem;margin-inline-end:4px}
+.pk .m{font-size:.85rem;color:var(--ink-soft)}
+.pk .why{font-size:.85rem;color:var(--good);font-weight:600}
+.pk a{margin-top:auto;text-align:center;text-decoration:none;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:8px}
+.more{display:inline-block;margin-top:14px;font-weight:700;color:var(--ink)}
+footer{border-top:2px solid var(--line);margin-top:30px;padding:22px 0 40px;color:var(--ink-soft);font-size:.92rem}
+footer a{color:var(--ink);font-weight:700}
+@media (max-width:560px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}.pk .t{font-size:.88rem}section.g{box-shadow:4px 4px 0 var(--shadow)}}
+</style>
+<style>
+/* Routes page additions: difficulty filter chips, Leaflet map frame, route cards */
+.lv{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.lv button{font:inherit;font-weight:600;font-size:.95rem;cursor:pointer;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 14px}
+.lv button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+#map{height:420px;border:3px solid var(--line);border-radius:22px;box-shadow:6px 6px 0 var(--shadow);margin:0 0 10px;z-index:1}
+.mapnote{font-size:.88rem;color:var(--ink-soft);margin:0 0 28px}
+.routes{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin:12px 0 4px}
+.rt{border:2px solid var(--line);border-radius:18px;padding:14px 16px;background:var(--card);display:flex;flex-direction:column;gap:6px}
+.rt h3{margin:0;font-size:1.15rem}
+.rt .meta{font-size:.88rem;color:var(--ink-soft)}
+.rt p{margin:0;font-size:.95rem}
+.rt .warn{font-size:.85rem;color:var(--bad);font-weight:600}
+.rt .acts{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap;padding-top:6px}
+.rt .acts a{text-decoration:none;font-weight:700;font-size:.88rem;border:2px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--ink)}
+.rt .acts a.nav{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-inline-end:6px;vertical-align:middle;border:1px solid #14181b}
+section.g.hide{display:none}
+@media (max-width:560px){#map{height:320px;box-shadow:4px 4px 0 var(--shadow)}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="home" href="./"><img src="logo.png" alt=""><b>The Bike Shop</b></a>
+  <a class="back" href="./">לחנות ←</a>
+</div></header>
+
+<main class="wrap">
+  <h1>מסלולי אופניים לפי רמת קושי</h1>
+  <p class="lead">מהטיילת הראשונה עם הילדים ועד הסינגל השחור הראשון בארץ. בוחרים רמה, רואים על המפה איפה זה, ולוחצים לניווט. לכל רמה הוספנו גם מה כדאי לקחת.</p>
+  <nav class="lv" aria-label="רמת קושי"><button type="button" data-f="all" aria-pressed="true">הכול</button><button type="button" data-f="kids" aria-pressed="false">👶 ילדים</button><button type="button" data-f="family" aria-pressed="false">👨‍👩‍👧 משפחות</button><button type="button" data-f="easy" aria-pressed="false">🟢 קל</button><button type="button" data-f="medium" aria-pressed="false">🔵 בינוני</button><button type="button" data-f="hard" aria-pressed="false">🔴 קשה</button><button type="button" data-f="extreme" aria-pressed="false">⚫ מאתגר</button></nav>
+  <div id="map" role="region" aria-label="מפת מסלולים"></div>
+  <p class="mapnote">הנקודות מסמנות את אזור תחילת המסלול, לא את התוואי המדויק. את השביל עצמו עוקבים לפי הסימון בשטח ולפי שילוט קק"ל.</p>
+  
+  <section class="g" id="kids" data-lv="kids">
+    <span class="k">👶 ילדים</span>
+    <h2>מסלולים ברמת ילדים</h2>
+    <p>רכיבה ראשונה בחוץ: שבילים סלולים או מישוריים, בלי תנועה, עם הרבה עצירות. מתאים לאופניים עם גלגלי עזר ולאופני איזון.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>פארק הירקון, תל אביב</h3><div class="meta">2–30 ק&quot;מ, מעגלי · מרכז</div><p>שבילים סלולים ומשולטים בין מדשאות, עם כמה מסלולים מעגליים קצרים. מתאים גם לעגלות ולכיסאות ילדים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.0995,34.813&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.calcalist.co.il/local/articles/0,7340,L-3384804,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>הפארק האקולוגי, הוד השרון</h3><div class="meta">2 או 6.5 ק&quot;מ · שרון</div><p>שביל מישורי לחלוטין סביב אגם, ונגיש גם לעגלות. יש גם שביל אופניים לאורך נחל הדר.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.141,34.905&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/728" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#9ad1f5"></span>טיילת ראש הנקרה–אכזיב</h3><div class="meta">כ-5 ק&quot;מ · גליל מערבי</div><p>טיילת לאורך החוף עם נוף פתוח לים. שטוחה ונוחה לרכיבה ראשונה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.065,35.106&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/טיולי_אופניים_עם_ילדים_רעיונות_למסלולים_לרכיבה_מ.asp" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005006955230853:פנימית לגלגלים קטנים,1005006837410945:בקבוק רך לילד,1005007821844814:פנס קטן לקסדה,1005008134209479:מנעול לעצירות"></div>
+  </section>
+  <section class="g" id="family" data-lv="family">
+    <span class="k">👨‍👩‍👧 משפחות</span>
+    <h2>מסלולים ברמת משפחות</h2>
+    <p>שטח ראשון לכל המשפחה: דרכי עפר רחבות, עליות מתונות, וחניון עם שירותים ומים בסוף.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>יער בארי – המסלול הכתום</h3><div class="meta">כ-7 ק&quot;מ, מעגלי · נגב מערבי</div><p>המסלול שמומלץ למשפחות שיוצאות לשטח בפעם הראשונה. בחורף ובאביב מלא כלניות.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.422,34.492&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.karamel.co.il/%D7%99%D7%A2%D7%A8_%D7%91%D7%90%D7%A8%D7%99.asp" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#c9e43a"></span>סובב יער אודם</h3><div class="meta">מעגלי · רמת הגולן</div><p>רובו על שבילי ג׳יפים רחבים, ומתאים גם למתחילים. קריר בקיץ, ולפעמים מושלג בחורף.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=33.19,35.75&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005008195919743:מנשא בקבוק,1005008555205373:בקבוק 750 מ&quot;ל,1005010287685046:משאבה לכל המשפחה,1005008513762083:כפפות"></div>
+  </section>
+  <section class="g" id="easy" data-lv="easy">
+    <span class="k">🟢 קל</span>
+    <h2>מסלולים ברמת קל</h2>
+    <p>סינגל ראשון למבוגרים: שביל צר, אבל בלי מכשולים טכניים. מתאים לאופני שטח בסיסיים ולכושר של שעה-שעתיים.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל הרצל (ברוטיה), יער בן שמן</h3><div class="meta">כ-10.5 ק&quot;מ, מעגלי, כחול · מרכז</div><p>הסינגל הכי מוכר למתחילים במרכז. לא קשה פיזית ולא טכני, ועובר בין אורנים ואקליפטוסים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.955,34.935&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>סינגל יער יד מרדכי</h3><div class="meta">20 ק&quot;מ, שלוש טבעות · נגב צפוני</div><p>סינגל של קק&quot;ל שנפתח במרץ 2025, ומותאם לרמת רכיבה בסיסית. אפשר לקצר לטבעת אחת.</p><div class="warn">⚠️ עוטף עזה: לבדוק שהאזור פתוח למבקרים לפני היציאה.</div><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.585,34.56&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ias.co.il/?p=170229" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#2f9e44"></span>מסלול מעגלי, שדה בוקר</h3><div class="meta">7 ק&quot;מ, עד שעתיים · נגב</div><p>מסלול קל במדבר, שיוצא מתחנת הדלק של מדרשת בן-גוריון. לרכוב רק בחורף ובשעות הבוקר.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=30.85,34.78&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.maariv.co.il/lifestyle/travel/Article-948895" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005006068532849:לדעת כמה רכבתם,1005011596788538:תיק אוכף לערכה,1005005119033212:מנופי צמיג,1005008561994201:טלאים בלי דבק"></div>
+  </section>
+  <section class="g" id="medium" data-lv="medium">
+    <span class="k">🔵 בינוני</span>
+    <h2>מסלולים ברמת בינוני</h2>
+    <p>רוכבים שכבר רוכבים בקביעות: עליות של ממש, מדרגות סלע קטנות, ו-20 ק&quot;מ ומעלה.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגל יער בית קשת</h3><div class="meta">22 ק&quot;מ · גליל תחתון</div><p>נחשב לאחד הסינגלים הטובים בארץ. שביל צר, 20 עד 50 ס&quot;מ, בין עצי אלון.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.71,35.4&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.ynet.co.il/articles/0,7340,L-3694927,00.html" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>סינגלים ענבה וחדיד, בן שמן</h3><div class="meta">חדיד כ-11 ק&quot;מ · מרכז</div><p>ההמשך הטבעי אחרי סינגל הרצל. בחדיד יש כמה מדרגות סלע שדורשות ניסיון.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.95,34.96&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/804/%D7%98%D7%99%D7%95%D7%9C%D7%99-%D7%90%D7%95%D7%A4%D7%A0%D7%99%D7%99%D7%9D" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#1c7ed6"></span>שביל ישראל לאופניים – הקטע הדרומי</h3><div class="meta">85 ק&quot;מ, יומיים · אילת</div><p>ממעלה שחרות דרך תמנע עד אילת. טכנית בינוני, אבל ארוך: צריך לתכנן מים ולינה בתמנע.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=29.92,35.03&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/points-of-interest/221" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005006304312199:ניווט במסלול,1005007542279206:סרט נגד קוצים,1005008114091855:משאבת יד עם מד,1005009411115035:שקית מים 2 ליטר"></div>
+  </section>
+  <section class="g" id="hard" data-lv="hard">
+    <span class="k">🔴 קשה</span>
+    <h2>מסלולים ברמת קשה</h2>
+    <p>טיפוסים תלולים, פיתולים חדים ומקטעים טכניים. כושר טוב ושליטה מלאה באופניים.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער טורען</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>פיתולים חדים וזוויות תלולות. לא סינגל של מהירות, אלא של שליטה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.78,35.36&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#e03131"></span>סינגל יער שגב</h3><div class="meta">גליל תחתון · גליל תחתון</div><p>מקטעים מהירים בהתחלה, ואחריהם עלייה אינטנסיבית וארוכה. שתי מבואות כניסה.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.86,35.25&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.weekend.co.il/article.aspx?id=750" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005007473542036:תיק גב עם מים,1005011999971800:כפפות בולמות,1005008107321918:משאבה לבולמים,1005006628942546:פנימית לשטח"></div>
+  </section>
+  <section class="g" id="extreme" data-lv="extreme">
+    <span class="k">⚫ מאתגר</span>
+    <h2>מסלולים ברמת מאתגר</h2>
+    <p>הדרגה הגבוהה ביותר: ירידות סלע, מקפצות וברמים. רק לרוכבים מנוסים עם מיגון מלא.</p>
+    <div class="routes"><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל קולה – המסלול השחור</h3><div class="meta">כ-4 ק&quot;מ, עם כיוון השעון · מרכז</div><p>המסלול הראשון בארץ שסומן בשחור: טיפוסים קצרים ותלולים, ירידות סלע, מקפצה וברמים. יש מעקפים אדומים, אבל גם הם טכניים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=32.02,34.95&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.tiuli.com/articles/3109/-537" target="_blank" rel="noopener">מקור</a></div></div><div class="rt"><h3><span class="dot" style="background:#14181b"></span>סינגל אלון, יער להב</h3><div class="meta">יער להב · נגב צפוני</div><p>זרימה מהירה לרוכבים ברמה גבוהה, וברמים ומקפצות למתקדמים.</p><div class="acts"><a class="nav" href="https://waze.com/ul?ll=31.38,34.87&navigate=yes" target="_blank" rel="noopener">ניווט לאזור ←</a><a href="https://www.kipa.co.il/לייף-סטייל/1111462" target="_blank" rel="noopener">מקור</a></div></div></div>
+    <h3>מה לקחת לרכיבה כזו</h3>
+    <div class="picks" data-ids="1005010802170331:פנימית TPU רזרבית,1005012038346610:קפסולת כלים,1005004995235263:רצועת דופק,1005005481362081:חיישן מהירות"></div>
+  </section>
+
+  <section class="g" id="before">
+    <span class="k">לפני שיוצאים</span>
+    <h2>חמישה דברים לבדוק לפני כל רכיבה</h2>
+    <p><b>שהמסלול פתוח:</b> מסלולים נסגרים לתחזוקה, אחרי שריפה או מסיבות ביטחוניות. בודקים באתר קק"ל או בקבוצות הרוכבים של האזור.</p>
+    <p><b>שאין בוץ:</b> אחרי גשם לא רוכבים בסינגלים בוציים. זה הורס את השביל ומסוכן. מחכים יום-יומיים שהאדמה תתייבש.</p>
+    <p><b>מים:</b> לפחות חצי ליטר לכל שעת רכיבה, ויותר בקיץ ובמדבר.</p>
+    <p><b>קסדה לכל רוכב:</b> בלי יוצאים מן הכלל, גם בטיילת עם הילדים.</p>
+    <p><b>ערכת תיקון:</b> פנימית רזרבית, מנופים ומשאבה. <a href="guides.html#pumps" style="color:var(--ink);font-weight:700">מה בדיוק לשים בתיק ←</a></p>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <p><a href="./">לחנות The Bike Shop</a> · <a href="guides.html">מדריכי קנייה</a> · <a href="how-to-buy.html">איך קונים נכון באלי אקספרס</a></p>
+  <p><b>המידע על המסלולים</b> נאסף מכתבות ומאתרי טיולים, ולכל מסלול יש קישור למקור. מצב המסלולים משתנה, והרכיבה היא באחריות הרוכב.</p>
+  <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר, אלי אקספרס תשלם לנו עמלה קטנה. המחיר שלכם לא משתנה.</p>
+  <p>© <span id="year">2026</span> The Bike Shop · מפה: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a></p>
+</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function imgFail(el){
+  if (!el.dataset.alt && /aliexpress-media\.com\/kf\//.test(el.src)) { el.dataset.alt = 1; el.src = el.src.replace(/^https?:\/\/[^/]+\/kf\//, 'https://ae01.alicdn.com/kf/'); return; }
+  el.onerror = null; el.src = 'logo.png';
+}
+fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(db => {
+  const byId = Object.fromEntries(db.products.filter(p => !p.status).map(p => [p.id, p]));
+  document.querySelectorAll('.picks').forEach(box => {
+    box.innerHTML = box.dataset.ids.split(',').map(x => {
+      const i = x.indexOf(':'); const id = x.slice(0, i), why = x.slice(i + 1);
+      const p = byId[id]; if (!p) return '';
+      return `<div class="pk"><div class="im">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : ''}</div>
+        <div class="bd"><span class="why">${esc(why)}</span><div class="t"><span>${esc(p.brand)}</span>${esc(p.title)}</div>
+        <div class="m">${p.rating}% חיובי · ${Number(p.sold).toLocaleString('he-IL')} נמכרו · ${p.variant ? 'כ־' : 'החל מ־'}<bdi dir="ltr">${Math.round(p.price)}$</bdi></div>
+        <a href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה ←</a></div></div>`;
+    }).join('');
+  });
+}).catch(() => document.querySelectorAll('.picks').forEach(b => b.innerHTML = '<p>המוצרים נמצאים בחנות.</p>'));
+
+const PTS = [{"lv": "kids", "n": "פארק הירקון, תל אביב", "lat": 32.0995, "lng": 34.813, "ln": "2–30 ק\"מ, מעגלי", "c": "#9ad1f5"}, {"lv": "kids", "n": "הפארק האקולוגי, הוד השרון", "lat": 32.141, "lng": 34.905, "ln": "2 או 6.5 ק\"מ", "c": "#9ad1f5"}, {"lv": "kids", "n": "טיילת ראש הנקרה–אכזיב", "lat": 33.065, "lng": 35.106, "ln": "כ-5 ק\"מ", "c": "#9ad1f5"}, {"lv": "family", "n": "יער בארי – המסלול הכתום", "lat": 31.422, "lng": 34.492, "ln": "כ-7 ק\"מ, מעגלי", "c": "#c9e43a"}, {"lv": "family", "n": "סובב יער אודם", "lat": 33.19, "lng": 35.75, "ln": "מעגלי", "c": "#c9e43a"}, {"lv": "easy", "n": "סינגל הרצל (ברוטיה), יער בן שמן", "lat": 31.955, "lng": 34.935, "ln": "כ-10.5 ק\"מ, מעגלי, כחול", "c": "#2f9e44"}, {"lv": "easy", "n": "סינגל יער יד מרדכי", "lat": 31.585, "lng": 34.56, "ln": "20 ק\"מ, שלוש טבעות", "c": "#2f9e44"}, {"lv": "easy", "n": "מסלול מעגלי, שדה בוקר", "lat": 30.85, "lng": 34.78, "ln": "7 ק\"מ, עד שעתיים", "c": "#2f9e44"}, {"lv": "medium", "n": "סינגל יער בית קשת", "lat": 32.71, "lng": 35.4, "ln": "22 ק\"מ", "c": "#1c7ed6"}, {"lv": "medium", "n": "סינגלים ענבה וחדיד, בן שמן", "lat": 31.95, "lng": 34.96, "ln": "חדיד כ-11 ק\"מ", "c": "#1c7ed6"}, {"lv": "medium", "n": "שביל ישראל לאופניים – הקטע הדרומי", "lat": 29.92, "lng": 35.03, "ln": "85 ק\"מ, יומיים", "c": "#1c7ed6"}, {"lv": "hard", "n": "סינגל יער טורען", "lat": 32.78, "lng": 35.36, "ln": "גליל תחתון", "c": "#e03131"}, {"lv": "hard", "n": "סינגל יער שגב", "lat": 32.86, "lng": 35.25, "ln": "גליל תחתון", "c": "#e03131"}, {"lv": "extreme", "n": "סינגל קולה – המסלול השחור", "lat": 32.02, "lng": 34.95, "ln": "כ-4 ק\"מ, עם כיוון השעון", "c": "#14181b"}, {"lv": "extreme", "n": "סינגל אלון, יער להב", "lat": 31.38, "lng": 34.87, "ln": "יער להב", "c": "#14181b"}];
+let markers = [];
+let map = null;
+try {
+  map = L.map('map', {scrollWheelZoom:false}).setView([31.7, 35.0], 7);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:17, attribution:'&copy; OpenStreetMap'}).addTo(map);
+  markers = PTS.map(p => L.circleMarker([p.lat, p.lng], {radius:9, color:'#14181b', weight:2, fillColor:p.c, fillOpacity:.95})
+    .bindPopup(`<b>${esc(p.n)}</b><br>${esc(p.ln)}<br><a href="#${p.lv}">לפרטים ←</a>`).addTo(map));
+} catch(e) { document.getElementById('map').style.display = 'none'; }
+function filt(f) {
+  document.querySelectorAll('.lv button').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
+  document.querySelectorAll('section.g[data-lv]').forEach(s => s.classList.toggle('hide', f !== 'all' && s.dataset.lv !== f));
+  if (!map) return;
+  const shown = [];
+  markers.forEach((m, i) => { const on = f === 'all' || PTS[i].lv === f; if (on) { m.addTo(map); shown.push([PTS[i].lat, PTS[i].lng]); } else m.remove(); });
+  if (shown.length) map.fitBounds(shown, {padding:[40,40], maxZoom:11});
+}
+document.querySelectorAll('.lv button').forEach(b => b.onclick = () => { filt(b.dataset.f); history.replaceState(null, '', b.dataset.f === 'all' ? location.pathname : '#' + b.dataset.f); });
+const h = location.hash.slice(1); if (PTS.some(p => p.lv === h)) filt(h); else filt('all');
+</script>
+</body>
+</html>
