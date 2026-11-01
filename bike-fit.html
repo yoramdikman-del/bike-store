@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>איך בוחרים אופניים ומידה – The Bike Shop</title>
+<meta name="description" content="מחשבון מידת אופניים לפי גובה, איך מכוונים גובה אוכף, 27.5 או 29 אינץ', איזה רוחב צמיג מתאים, ואופני ילדים לפי גובה. מדריך בעברית.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: long-read guides – sticky header, chip TOC, one bordered section per guide with a comparison table and product picks */
+:root{
+  --paper:#eef1ea; --ink:#14181b; --ink-soft:#3c454b; --line:#14181b;
+  --card:#ffffff; --accent:#e8590c; --accent-ink:#ffffff; --chip:#dfe5d6;
+  --good:#1b6b4a; --bad:#a3321b; --teal:#1d3a46; --lime:#c9e43a; --shadow:#14181b;
+  --f:"Fredoka","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#111416; --ink:#eef1ea; --ink-soft:#b4bec4; --line:#eef1ea;
+  --card:#1c2226; --accent:#ff7a2e; --accent-ink:#111416; --chip:#2a3238; --good:#4fc28d; --bad:#ff8a70; --teal:#24505f; --shadow:#000000; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f);font-size:17px;line-height:1.65}
+.wrap{max-width:980px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+header{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2px solid var(--line)}
+.bar{display:flex;align-items:center;gap:12px;padding-block:10px}
+.bar a.home{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-width:0}
+.bar img{width:44px;height:44px;border-radius:50%;flex:none}
+.bar b{font-weight:700;font-size:1.15rem}
+.bar .back{margin-inline-start:auto;flex:none;text-decoration:none;font-weight:600;color:var(--accent-ink);background:var(--accent);padding:7px 14px;border-radius:999px;font-size:.92rem}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:34px 0 8px}
+.lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch;margin:0 0 20px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+nav.toc a{text-decoration:none;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.95rem}
+nav.toc a:hover{background:var(--lime);color:#14181b}
+section.g{background:var(--card);border:3px solid var(--line);border-radius:28px;box-shadow:6px 6px 0 var(--shadow);padding:clamp(20px,4vw,34px);margin:0 0 34px;scroll-margin-top:80px}
+section.g h2{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:0 0 6px}
+.k{display:inline-block;background:var(--lime);color:#14181b;font-weight:700;font-size:.85rem;border-radius:999px;padding:2px 12px;margin-bottom:10px}
+section.g h3{font-size:1.25rem;margin:24px 0 8px}
+section.g p{margin:0 0 12px;max-width:68ch}
+.tbl{overflow-x:auto;margin:10px 0 6px;border:2px solid var(--line);border-radius:16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.98rem}
+th,td{padding:10px 12px;text-align:start;vertical-align:top;border-bottom:1px solid color-mix(in srgb,var(--line) 25%,transparent)}
+th{background:var(--teal);color:#f3f5ef;font-weight:600}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.fit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0}
+.fit div{border-radius:18px;padding:14px 16px;border:2px solid var(--line)}
+.fit .yes{background:color-mix(in srgb,var(--good) 12%,var(--card))}
+.fit .no{background:color-mix(in srgb,var(--bad) 10%,var(--card))}
+.fit b{display:block;margin-bottom:4px}
+.fit ul{margin:0;padding-inline-start:18px}
+.tip{background:var(--chip);border-radius:16px;padding:12px 16px;margin:14px 0;font-weight:500}
+.tip b{color:var(--accent)}
+.picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:12px 0 4px}
+.pk{display:flex;flex-direction:column;border:2px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+.pk .im{aspect-ratio:1;background:#fff;display:grid;place-items:center}
+.pk img{width:100%;height:100%;object-fit:contain}
+.pk .bd{padding:10px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.pk .t{font-weight:600;font-size:.95rem;line-height:1.35}
+.pk .t span{background:var(--lime);color:#14181b;border-radius:999px;padding:0 8px;font-size:.78rem;margin-inline-end:4px}
+.pk .m{font-size:.85rem;color:var(--ink-soft)}
+.pk .why{font-size:.85rem;color:var(--good);font-weight:600}
+.pk a{margin-top:auto;text-align:center;text-decoration:none;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:8px}
+.more{display:inline-block;margin-top:14px;font-weight:700;color:var(--ink)}
+footer{border-top:2px solid var(--line);margin-top:30px;padding:22px 0 40px;color:var(--ink-soft);font-size:.92rem}
+footer a{color:var(--ink);font-weight:700}
+@media (max-width:560px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}.pk .t{font-size:.88rem}section.g{box-shadow:4px 4px 0 var(--shadow)}}
+</style>
+<style>
+/* Bike-fit page additions: size calculator card and result tiles */
+.calc{background:var(--teal);color:#f3f5ef;border:3px solid var(--line);border-radius:28px;box-shadow:6px 6px 0 var(--shadow);padding:clamp(18px,4vw,30px);margin:0 0 34px}
+.calc h2{margin:0 0 4px;font-size:clamp(1.4rem,4vw,1.9rem)}
+.calc p.sub{margin:0 0 16px;color:#d5dfe2}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:0 0 16px}
+.fields label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.95rem}
+.fields input,.fields select{font:inherit;font-size:1.05rem;padding:10px 12px;border-radius:14px;border:2px solid #14181b;background:#fff;color:#14181b;width:100%}
+.fields small{font-weight:400;color:#c4d0d4;font-size:.8rem}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.tile{background:#f3f5ef;color:#14181b;border:2px solid #14181b;border-radius:18px;padding:12px 14px}
+.tile .l{font-size:.85rem;color:#3c454b;font-weight:600}
+.tile .v{font-size:1.45rem;font-weight:700;line-height:1.2;margin:2px 0}
+.tile .n{font-size:.85rem;color:#3c454b}
+.calc .err{color:#ffd2c2;font-weight:600;margin:0 0 10px;min-height:1.2em}
+.calc .fine{font-size:.85rem;color:#c4d0d4;margin:12px 0 0}
+.src{font-size:.88rem}
+.src li{margin:0 0 4px}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="home" href="./"><img src="logo.png" alt=""><b>The Bike Shop</b></a>
+  <a class="back" href="./">לחנות ←</a>
+</div></header>
+
+<main class="wrap">
+  <h1>איך בוחרים אופניים ואיזו מידה מתאימה לי</h1>
+  <p class="lead">אופניים במידה לא נכונה כואבים בגב, בברכיים ובידיים, ומהר מאוד נשארים במחסן. כאן: מחשבון מידה לפי גובה, איך מכוונים גובה אוכף, 27.5 או 29, ואיזה רוחב צמיג מתאים.</p>
+  <nav class="toc" aria-label="נושאים">
+    <a href="#calc">📏 מחשבון מידה</a>
+    <a href="#types">🚲 איזה סוג אופניים</a>
+    <a href="#sizes">📐 טבלאות מידה</a>
+    <a href="#saddle">🪑 גובה אוכף</a>
+    <a href="#wheels">⭕ 27.5 או 29</a>
+    <a href="#tires">🛞 רוחב צמיג</a>
+    <a href="#kids">👶 אופני ילדים</a>
+  </nav>
+
+  <section class="calc" id="calc" aria-labelledby="calc-h">
+    <h2 id="calc-h">📏 מחשבון מידה</h2>
+    <p class="sub">ממלאים גובה, ואם אפשר גם אורך רגל פנימי, ומקבלים מידת שלדה, גובה אוכף וגודל גלגל.</p>
+    <div class="fields">
+      <label>סוג האופניים
+        <select id="type">
+          <option value="mtb">שטח (MTB)</option>
+          <option value="road">כביש או גראבל</option>
+          <option value="city">עיר והייבריד</option>
+          <option value="kids">ילדים</option>
+        </select>
+      </label>
+      <label>גובה (ס"מ)
+        <input id="h" type="number" inputmode="numeric" min="80" max="210" step="1" placeholder="175">
+      </label>
+      <label>אורך רגל פנימי (ס"מ)
+        <input id="ins" type="number" inputmode="numeric" min="35" max="105" step="1" placeholder="אופציונלי">
+        <small>איך מודדים? <a href="#saddle" style="color:#fff">כאן</a></small>
+      </label>
+    </div>
+    <p class="err" id="err" role="alert"></p>
+    <div class="res" id="res" aria-live="polite"></div>
+    <p class="fine">התוצאה היא נקודת פתיחה. כל יצרן מודד אחרת, אז תמיד בודקים את טבלת המידות של הדגם, ואם אפשר, נוסעים סיבוב לפני הקנייה.</p>
+  </section>
+
+  <section class="g" id="types">
+    <span class="k">לפני המידה</span>
+    <h2>איזה סוג אופניים מתאים לכם?</h2>
+    <p>השאלה הראשונה היא לא המידה, אלא איפה תרכבו רוב הזמן. אופניים שמתאימים לשטח יהיו כבדים ואיטיים בכביש, ולהפך.</p>
+    <div class="tbl"><table>
+      <tr><th>סוג</th><th>איפה רוכבים</th><th>צמיג</th><th>יתרון</th><th>חיסרון</th></tr>
+      <tr><td>כביש</td><td>כביש סלול, רכיבות ארוכות</td><td>צר, 25–32 מ"מ</td><td>מהיר וקל</td><td>לא לעפר, תנוחה רכונה</td></tr>
+      <tr><td>גראבל</td><td>כביש ודרכי עפר</td><td>35–50 מ"מ</td><td>אופניים אחד לשני העולמות</td><td>פחות נוח בסינגל טכני</td></tr>
+      <tr><td>שטח זנב קשיח (הארדטייל)</td><td>סינגלים ודרכי עפר</td><td>2.2–2.4 אינץ'</td><td>זול יותר, קל, פחות תחזוקה</td><td>קופץ יותר בירידות סלעיות</td></tr>
+      <tr><td>שטח שיכוך מלא</td><td>סינגלים טכניים וירידות</td><td>2.3–2.6 אינץ'</td><td>אחיזה ונוחות בשטח קשה</td><td>יקר וכבד יותר, יותר תחזוקה</td></tr>
+      <tr><td>עיר והייבריד</td><td>עיר, טיילות, נסיעה לעבודה</td><td>35–45 מ"מ</td><td>ישיבה זקופה ונוחה</td><td>לא לשטח של ממש</td></tr>
+    </table></div>
+    <div class="tip"><b>טיפ:</b> מתלבטים בין כביש לשטח? אם רוב הרכיבות שלכם מתחילות בכביש ונגמרות בשביל עפר, גראבל הוא כנראה התשובה.</div>
+  </section>
+
+  <section class="g" id="sizes">
+    <span class="k">מידת שלדה</span>
+    <h2>טבלאות מידה לפי גובה</h2>
+    <p>באופני כביש המידה נמדדת בס"מ, בערך אורך צינור המושב. באופני שטח ועיר משתמשים באותיות. הטבלאות הן ממוצע בין יצרנים, ונקודת פתיחה בלבד.</p>
+    <h3>אופני כביש וגראבל</h3>
+    <div class="tbl"><table>
+      <tr><th>גובה הרוכב</th><th>מידת שלדה</th><th>באותיות, בערך</th></tr>
+      <tr><td>155–160 ס"מ</td><td>48–50</td><td>XS</td></tr>
+      <tr><td>160–170 ס"מ</td><td>50–54</td><td>S</td></tr>
+      <tr><td>170–180 ס"מ</td><td>54–56</td><td>M</td></tr>
+      <tr><td>180–188 ס"מ</td><td>56–58</td><td>L</td></tr>
+      <tr><td>מעל 188 ס"מ</td><td>58–62</td><td>XL</td></tr>
+    </table></div>
+    <h3>אופני שטח ועיר</h3>
+    <div class="tbl"><table>
+      <tr><th>גובה הרוכב</th><th>מידה</th></tr>
+      <tr><td>155–165 ס"מ</td><td>XS או S</td></tr>
+      <tr><td>165–175 ס"מ</td><td>S או M</td></tr>
+      <tr><td>175–183 ס"מ</td><td>M או L</td></tr>
+      <tr><td>183–193 ס"מ</td><td>L או XL</td></tr>
+      <tr><td>מעל 193 ס"מ</td><td>XL או XXL</td></tr>
+    </table></div>
+    <h3>נופלים בין שתי מידות?</h3>
+    <div class="fit">
+      <div class="yes"><b>⬇️ המידה הקטנה</b><ul><li>רגליים ארוכות וגו קצר</li><li>אוהבים אופניים זריזים וקלים לסיבוב</li><li>רוכבים בסינגלים טכניים</li></ul></div>
+      <div class="no"><b>⬆️ המידה הגדולה</b><ul><li>גו וידיים ארוכים</li><li>רוכבים ארוך ורוצים יציבות במהירות</li><li>רוכבים בעיקר בכביש ובדרכי עפר</li></ul></div>
+    </div>
+    <p><b>בדיקת עמידה:</b> עומדים מעל צינור השלדה העליון, שתי כפות הרגליים על הרצפה. בכביש צריך מרווח של 2–5 ס"מ, ובשטח 5–10 ס"מ. אם הצינור נוגע בכם, השלדה גדולה מדי.</p>
+  </section>
+
+  <section class="g" id="saddle">
+    <span class="k">כיוון האופניים</span>
+    <h2>איך מודדים אורך רגל ומכוונים גובה אוכף</h2>
+    <h3>מודדים אורך רגל פנימי בשתי דקות</h3>
+    <p>1. עומדים צמוד לקיר, יחפים, כפות הרגליים במרחק של כ-15 ס"מ זו מזו.<br>2. מכניסים ספר בכריכה קשה בין הרגליים, השדרה למעלה, ומצמידים אותו בעדינות למפשעה, כמו אוכף.<br>3. מישהו אחר מודד מהחלק העליון של הספר ועד הרצפה.</p>
+    <h3>גובה האוכף</h3>
+    <p>מכפילים את אורך הרגל ב-<b>0.883</b>. זה המרחק ממרכז ציר הקראנק, הציר שעליו מסתובבים הפדלים, ועד החלק העליון של האוכף, לאורך מוט האוכף.</p>
+    <p>בדיקה בפועל: כשהפדל בנקודה הנמוכה ביותר, הברך צריכה להיות כמעט ישרה, עם כיפוף קל של 25–30 מעלות. אם האגן מתנדנד מצד לצד בזמן דיווש, האוכף גבוה מדי. אם הברכיים כואבות מקדימה, הוא כנראה נמוך מדי.</p>
+    <div class="tip"><b>טיפ:</b> משנים גובה בצעדים של חצי ס"מ, ורוכבים כמה ימים לפני השינוי הבא. ובאופני ילדים זה אחרת: הילד צריך להגיע לרצפה עם קצות האצבעות כשהוא יושב, כדי שירגיש בטוח.</div>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005007942092189:לכיוון גובה האוכף,1005008238795670:אוכף נוח ומרופד,1005008119325241:אוכף עם חריץ, פחות לחץ,1005007406791195:פדלים שטוחים לשטח ולעיר"></div>
+  </section>
+
+  <section class="g" id="wheels">
+    <span class="k">גודל גלגל</span>
+    <h2>27.5 או 29 אינץ': מה יותר טוב?</h2>
+    <p>אין "יותר טוב", יש מה שמתאים לגובה שלכם ולסוג הרכיבה. ודבר אחד לפני: אין היום גלגל 27 באופני שטח. כשאומרים "27", מתכוונים ל-27.5, שנקרא גם 650B.</p>
+    <div class="tbl"><table>
+      <tr><th></th><th>27.5 אינץ'</th><th>29 אינץ'</th></tr>
+      <tr><td>האצה</td><td>מהירה יותר</td><td>איטית יותר בהתחלה</td></tr>
+      <tr><td>משקל</td><td>קל יותר</td><td>כבד יותר</td></tr>
+      <tr><td>סיבובים חדים</td><td>זריז</td><td>פחות זריז</td></tr>
+      <tr><td>עלייה על סלעים ושורשים</td><td>טוב</td><td>מצוין, הגלגל "מתגלגל" מעל מכשולים</td></tr>
+      <tr><td>אחיזה</td><td>טובה</td><td>טובה יותר, שטח מגע גדול יותר</td></tr>
+      <tr><td>רכיבות ארוכות</td><td>טוב</td><td>שומר מהירות ביעילות</td></tr>
+      <tr><td>מתאים לגובה</td><td>עד 170 ס"מ, וגם לגבוהים</td><td>מ-170 ס"מ ומעלה</td></tr>
+    </table></div>
+    <div class="fit">
+      <div class="yes"><b>✔️ 29 אם</b><ul><li>אתם מעל 170 ס"מ</li><li>רוכבים ארוך, בדרכי עפר וסינגלים זורמים</li><li>מתחילים: הגלגל הגדול סולח יותר על טעויות</li></ul></div>
+      <div class="no"><b>✔️ 27.5 אם</b><ul><li>אתם מתחת ל-165–170 ס"מ</li><li>אוהבים סינגלים מפותלים, קפיצות ומשחק עם האופניים</li><li>רוכבת או רוכב צעירים שעוברים מאופני ילדים</li></ul></div>
+    </div>
+    <p><b>"מאלט" (Mullet):</b> גלגל 29 מקדימה ו-27.5 מאחור. הגלגל הקדמי עובר מכשולים, והאחורי הקטן נותן זריזות ומרווח בירידות תלולות. נפוץ באופני אנדורו וירידות, ופחות רלוונטי לרוב הרוכבים.</p>
+    <div class="tip"><b>חשוב:</b> אי אפשר פשוט להחליף גלגל 27.5 ב-29 או להפך. השלדה והבולם בנויים לגודל מסוים. מחליפים רק צמיג ופנימית באותו גודל גלגל.</div>
+  </section>
+
+  <section class="g" id="tires">
+    <span class="k">צמיגים</span>
+    <h2>איך יודעים איזה צמיג מתאים?</h2>
+    <p>המידה כתובה על דופן הצמיג. בכביש ובגראבל, למשל <bdi dir="ltr">700x28C</bdi>: הגלגל בגודל 700 והרוחב 28 מ"מ. בשטח, למשל <bdi dir="ltr">29x2.3</bdi>: גלגל 29 אינץ' ורוחב 2.3 אינץ'. ליד זה יש גם מספר כמו <bdi dir="ltr">57-622</bdi>, רוחב וקוטר במ"מ, וזה המספר הכי מדויק להשוואה.</p>
+    <div class="tbl"><table>
+      <tr><th>סוג</th><th>רוחב נפוץ</th><th>מה משנה הרוחב</th></tr>
+      <tr><td>כביש</td><td>25–32 מ"מ</td><td>28 הוא היום ברירת המחדל: נוח יותר מ-25, וכמעט באותה מהירות</td></tr>
+      <tr><td>גראבל</td><td>35–50 מ"מ</td><td>רחב יותר לעפר וחצץ, צר יותר אם רוב הדרך סלולה</td></tr>
+      <tr><td>שטח (קרוס קאנטרי)</td><td>2.2–2.4 אינץ'</td><td>קל ומהיר</td></tr>
+      <tr><td>שטח (טרייל ואנדורו)</td><td>2.4–2.6 אינץ'</td><td>יותר אחיזה ובלימת זעזועים</td></tr>
+      <tr><td>עיר</td><td>35–45 מ"מ</td><td>נוחות על מדרכות ומעברי חצייה</td></tr>
+    </table></div>
+    <p>לפני שמחליפים לצמיג רחב יותר, בודקים שיש מספיק מרווח בשלדה ובמזלג, לפחות 4–6 מ"מ מכל צד. היצרן בדרך כלל מציין את הרוחב המקסימלי.</p>
+    <a class="more" href="guides.html#tubes">פנימית רגילה, TPU או טיובלס? למדריך ←</a>
+  </section>
+
+  <section class="g" id="kids">
+    <span class="k">ילדים</span>
+    <h2>אופני ילדים: גודל גלגל לפי גובה</h2>
+    <p>אופני ילדים נמדדים לפי גודל הגלגל, ובוחרים לפי גובה הילד, לא לפי הגיל. הטבלה היא ממוצע של כמה יצרנים, והטווחים חופפים.</p>
+    <div class="tbl"><table>
+      <tr><th>גובה הילד</th><th>גלגל</th><th>גיל, בערך</th></tr>
+      <tr><td>עד 95 ס"מ</td><td>אופני איזון</td><td>2–3</td></tr>
+      <tr><td>90–105 ס"מ</td><td>12 אינץ'</td><td>3–4</td></tr>
+      <tr><td>100–120 ס"מ</td><td>16 אינץ'</td><td>4–6</td></tr>
+      <tr><td>115–135 ס"מ</td><td>20 אינץ'</td><td>6–8</td></tr>
+      <tr><td>130–145 ס"מ</td><td>24 אינץ'</td><td>8–11</td></tr>
+      <tr><td>מעל 145 ס"מ</td><td>26 אינץ' או אופני מבוגרים XS</td><td>11+</td></tr>
+    </table></div>
+    <div class="fit">
+      <div class="yes"><b>✔️ כדאי</b><ul><li>אופני איזון לפני דוושות: ילדים לומדים מהר יותר, בלי גלגלי עזר</li><li>שלדה קלה. אופני ילדים כבדים הם הסיבה מספר אחת שילדים לא אוהבים לרכוב</li><li>בלמי יד שמתאימים לגודל היד</li></ul></div>
+      <div class="no"><b>✖️ פחות כדאי</b><ul><li>לקנות גדול "שיגדל לתוכם". אופניים גדולים מדי מפחידים ומסוכנים</li><li>בולמי זעזועים זולים באופני ילדים: הם רק מוסיפים משקל</li></ul></div>
+    </div>
+    <a class="more" href="routes.html#kids">איפה לרכוב עם הילדים? למסלולים ←</a>
+    <h3>מה בחרנו</h3>
+    <div class="picks" data-ids="1005006955230853:פנימית לגלגלים 12–24,1005007950047534:רגלית מתכווננת,1005006837410945:בקבוק רך לילד,1005007821844814:פנס קטן לקסדה"></div>
+  </section>
+
+  <section class="g" id="sources">
+    <span class="k">מקורות</span>
+    <h2>על מה מבוססות הטבלאות</h2>
+    <ul class="src">
+      <li><a href="https://biketips.com/how-to-choose-the-right-bike-size-a-complete-sizing-guide/" target="_blank" rel="noopener">BikeTips: טבלאות מידה, נוסחת גובה אוכף ובדיקת עמידה</a></li>
+      <li><a href="https://www.rei.com/learn/expert-advice/mountain-bike-wheel-size.html" target="_blank" rel="noopener">REI: 27.5 מול 29</a></li>
+      <li><a href="https://www.canyon.com/en-us/blog-content/mountain-bike-wheel-sizes.html" target="_blank" rel="noopener">Canyon: גודל גלגל לפי גובה, ומאלט</a></li>
+      <li><a href="https://www.cyclesuk.com/blog/guide-to-kids-bike-sizes/" target="_blank" rel="noopener">Cycles UK: טבלאות מידה לאופני ילדים של כמה יצרנים</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <p><a href="./">לחנות The Bike Shop</a> · <a href="guides.html">מדריכי קנייה</a> · <a href="routes.html">מסלולים לפי קושי</a> · <a href="how-to-buy.html">איך קונים נכון באלי אקספרס</a></p>
+  <p><b>קישורי שותפים:</b> אם תקנו דרך הקישורים באתר, אלי אקספרס תשלם לנו עמלה קטנה. המחיר שלכם לא משתנה.</p>
+  <p>הטבלאות והמחשבון הם נקודת פתיחה. המידה הקובעת היא טבלת המידות של היצרן לדגם שבחרתם.</p>
+  <p>© <span id="year">2026</span> The Bike Shop</p>
+</div></footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function imgFail(el){
+  if (!el.dataset.alt && /aliexpress-media\.com\/kf\//.test(el.src)) { el.dataset.alt = 1; el.src = el.src.replace(/^https?:\/\/[^/]+\/kf\//, 'https://ae01.alicdn.com/kf/'); return; }
+  el.onerror = null; el.src = 'logo.png';
+}
+fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(db => {
+  const byId = Object.fromEntries(db.products.filter(p => !p.status).map(p => [p.id, p]));
+  document.querySelectorAll('.picks').forEach(box => {
+    box.innerHTML = box.dataset.ids.split(',').map(x => {
+      const i = x.indexOf(':'); const id = x.slice(0, i), why = x.slice(i + 1);
+      const p = byId[id]; if (!p) return '';
+      return `<div class="pk"><div class="im">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : ''}</div>
+        <div class="bd"><span class="why">${esc(why)}</span><div class="t"><span>${esc(p.brand)}</span>${esc(p.title)}</div>
+        <div class="m">${p.rating}% חיובי · ${Number(p.sold).toLocaleString('he-IL')} נמכרו · ${p.variant ? 'כ־' : 'החל מ־'}<bdi dir="ltr">${Math.round(p.price)}$</bdi></div>
+        <a href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה ←</a></div></div>`;
+    }).join('');
+  });
+}).catch(() => document.querySelectorAll('.picks').forEach(b => b.innerHTML = '<p>המוצרים נמצאים בחנות.</p>'));
+
+const $ = id => document.getElementById(id);
+const ROAD = [[160,'48–50','XS'],[170,'50–54','S'],[180,'54–56','M'],[188,'56–58','L'],[999,'58–62','XL']];
+const MTB = [[165,'XS או S'],[175,'S או M'],[183,'M או L'],[193,'L או XL'],[999,'XL או XXL']];
+const KIDS = [[95,'אופני איזון','2–3'],[105,'12 אינץ\'','3–4'],[118,'16 אינץ\'','4–6'],[133,'20 אינץ\'','6–8'],[145,'24 אינץ\'','8–11'],[999,'26 אינץ\' או XS למבוגרים','11+']];
+const tile = (l, v, n) => `<div class="tile"><div class="l">${l}</div><div class="v">${v}</div><div class="n">${n}</div></div>`;
+function calc() {
+  const t = $('type').value, h = parseFloat($('h').value), ins = parseFloat($('ins').value);
+  const err = $('err'), out = $('res');
+  err.textContent = ''; out.innerHTML = '';
+  if (!h) return;
+  const minH = t === 'kids' ? 80 : 140, maxH = t === 'kids' ? 175 : 210;
+  if (h < minH || h > maxH) { err.textContent = t === 'kids' ? 'לאופני ילדים: גובה בין 80 ל-175 ס"מ.' : 'גובה בין 140 ל-210 ס"מ. לילדים בוחרים "ילדים".'; return; }
+  if ($('ins').value && (ins < 35 || ins > 105 || ins > h * 0.6)) { err.textContent = 'אורך הרגל נראה לא סביר. מודדים מהרצפה עד המפשעה, בערך 45% מהגובה.'; return; }
+  let html = '';
+  if (t === 'kids') {
+    const k = KIDS.find(r => h < r[0]);
+    html += tile('גודל גלגל', k[1], 'גיל בערך ' + k[2] + '. על הגבול? בוחרים את הקטן מבין השניים.');
+    html += tile('בבדיקה בחנות', 'קצות האצבעות', 'כשהילד יושב על האוכף, הוא צריך להגיע לרצפה עם קצות האצבעות.');
+  } else if (t === 'road') {
+    const r = ROAD.find(x => h < x[0]);
+    html += tile('מידת שלדה', r[1] + ' ס"מ', 'בערך מידה ' + r[2] + '. בגראבל אותה מידה.');
+    html += tile('רוחב צמיג', '28 מ"מ', 'בכביש 28 מ"מ, בגראבל 38–45 מ"מ.');
+  } else {
+    const r = MTB.find(x => h < x[0]);
+    html += tile('מידת שלדה', r[1], t === 'mtb' ? 'על הגבול? קטן לסינגלים טכניים, גדול לרכיבות ארוכות.' : 'באופני עיר בוחרים בדרך כלל את הקטנה מבין השתיים.');
+    if (t === 'mtb') html += tile('גודל גלגל', h < 165 ? '27.5' : h < 172 ? '27.5 או 29' : '29', h < 165 ? 'בגובה הזה 29 עלול להיות גדול מדי.' : h < 172 ? 'שניהם מתאימים. 29 לרכיבות ארוכות, 27.5 לזריזות.' : 'הגלגל הגדול עובר מכשולים ושומר מהירות.');
+    else html += tile('רוחב צמיג', '35–45 מ"מ', 'נוח על מדרכות ומעברי חצייה.');
+  }
+  if (ins && t !== 'kids') html += tile('גובה אוכף', Math.round(ins * 0.883 * 10) / 10 + ' ס"מ', 'ממרכז ציר הקראנק ועד ראש האוכף.');
+  else if (t !== 'kids') html += tile('גובה אוכף', '—', 'הוסיפו אורך רגל, ונחשב גם את גובה האוכף.');
+  out.innerHTML = html;
+}
+['type','h','ins'].forEach(id => $(id).addEventListener('input', calc));
+</script>
+</body>
+</html>

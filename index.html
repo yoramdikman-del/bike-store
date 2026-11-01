@@ -292,6 +292,7 @@ nav.cols button.plan-tab[aria-current="page"]{background:var(--ink);color:var(--
       <a class="contact-link" href="#contact">צור קשר</a>
       <a class="social" href="guides.html">מדריכים</a>
       <a class="social" href="routes.html">מסלולים</a>
+      <a class="social" href="bike-fit.html">איזו מידה?</a>
       <a class="social" href="#about">אודות</a>
       <a class="social" href="https://www.facebook.com/profile.php?id=61565935664015" target="_blank" rel="noopener">פייסבוק</a>
       <a class="social" href="https://chat.whatsapp.com/LtUMit52yjx7O1RwqoLGXu" target="_blank" rel="noopener">קבוצת ווצאפ</a>
@@ -368,7 +369,7 @@ nav.cols button.plan-tab[aria-current="page"]{background:var(--ink);color:var(--
 
 <footer>
   <div class="wrap">
-    <p><a href="#about" style="color:var(--ink);font-weight:700">אודות The Bike Shop</a> · <a href="how-to-buy.html" style="color:var(--ink);font-weight:700">איך קונים נכון באלי אקספרס</a> · <a href="guides.html" style="color:var(--ink);font-weight:700">מדריכי קנייה לרוכבים</a> · <a href="routes.html" style="color:var(--ink);font-weight:700">מסלולי אופניים לפי קושי</a></p>
+    <p><a href="#about" style="color:var(--ink);font-weight:700">אודות The Bike Shop</a> · <a href="how-to-buy.html" style="color:var(--ink);font-weight:700">איך קונים נכון באלי אקספרס</a> · <a href="guides.html" style="color:var(--ink);font-weight:700">מדריכי קנייה לרוכבים</a> · <a href="routes.html" style="color:var(--ink);font-weight:700">מסלולי אופניים לפי קושי</a> · <a href="bike-fit.html" style="color:var(--ink);font-weight:700">איך בוחרים אופניים ומידה</a></p>
     <div class="follow"><b>עקבו אחרינו:</b><a href="https://www.facebook.com/profile.php?id=61565935664015" target="_blank" rel="noopener">פייסבוק</a><a class="wa" href="https://chat.whatsapp.com/LtUMit52yjx7O1RwqoLGXu" target="_blank" rel="noopener">הצטרפו לקבוצת הווצאפ</a></div>
     <p class="sister"><b>חנויות אחיות:</b> <a href="https://myripo.com/camping-store/?from=bike" target="_blank" rel="noopener">מוצרים לקמפינג וטיולים</a> · <a href="https://myripo.com/photo-store/?from=bike" target="_blank" rel="noopener">צילום בכל גיל</a>, למצלמת אקשן ולתיעוד הרכיבה.</p>
     <p><b>קישורי שותפים:</b> על הזמן שאני משקיע בבדיקה, בחיפוש ובמיון המוצרים, אלי אקספרס משלמת לי עמלה קטנה כשאתם קונים דרך הקישורים באתר. המחיר שלכם לא משתנה.</p>
@@ -640,6 +641,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   if (CAMS) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'cam'; b.className = 'cam-tab'; b.textContent = '📷 מה מתאים למצלמה שלי'; b.onclick = () => go('#cam'); nav.appendChild(b); }
   { const g = document.createElement('button'); g.type = 'button'; g.className = 'news-tab'; g.textContent = '📖 מדריכי קנייה'; g.onclick = () => { location.href = 'guides.html'; }; nav.appendChild(g); }
   { const r = document.createElement('button'); r.type = 'button'; r.className = 'news-tab'; r.textContent = '🗺️ מסלולים'; r.onclick = () => { location.href = 'routes.html'; }; nav.appendChild(r); }
+  { const f = document.createElement('button'); f.type = 'button'; f.className = 'news-tab'; f.textContent = '📏 איזו מידה?'; f.onclick = () => { location.href = 'bike-fit.html'; }; nav.appendChild(f); }
   if (NEWS.length) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'news'; b.className = 'news-tab'; b.textContent = '📡 מה חדש השבוע'; b.onclick = () => go('#news'); nav.appendChild(b); }
   if (hasDeals()) { const b = document.createElement('button'); b.type = 'button'; b.dataset.id = 'deals'; b.className = 'deals-tab'; b.textContent = '🏷️ מבצעים וקופונים'; b.onclick = () => { history.replaceState(null, '', '#deals'); showDeals(); }; nav.appendChild(b); }
   DB.collections.forEach(c => {
