@@ -251,6 +251,8 @@ nav.cols button[aria-current="page"]{background:var(--ink);color:var(--paper)}
 footer{border-top:3px dashed var(--ink)}
 footer .sister a{color:var(--ink);font-weight:700}
 @media (prefers-reduced-motion:no-preference){.card:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--shadow)}.tiles button{transition:transform .15s ease}.tiles button:hover{transform:translateY(-3px)}}
+/* מוצר שנפתח מקישור ישיר (#p/מספר) */
+.card.hl{outline:4px solid var(--accent);outline-offset:4px}
 @media (max-width:560px){.home-hero .badge{width:92px;height:92px;font-size:.9rem}.card{box-shadow:4px 4px 0 var(--shadow)}}
 @media (max-width:560px){.acts{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.acts button{padding:14px;border-radius:20px;box-shadow:4px 4px 0 var(--shadow)}.acts button b{font-size:1.1rem}.acts button .ic{font-size:1.8rem}}
 @media (prefers-reduced-motion:no-preference){
@@ -416,7 +418,7 @@ function imgFail(el){
 }
 function card(p){
   const price = p.price ? (p.variant ? 'כ־' : 'החל מ־') + '<bdi dir="ltr">' + Math.round(p.price) + '$</bdi>' : '';
-  return `<article class="card">
+  return `<article class="card" data-pid="${esc(p.id)}">
     <div class="img">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : `<img class="ph" src="logo.png" alt="">`}${p.code ? `<span class="code-tag">${esc(p.code)}</span>` : ''}</div>
     <div class="body">
       ${p.kind ? `<span class="kind">${esc(p.kind)}</span>` : ''}
@@ -578,8 +580,18 @@ function showPlan(actId){
   sec.classList.remove('anim'); void sec.offsetWidth; sec.classList.add('anim');
   if (act) { const r = $('plan-res'); if (r) r.scrollIntoView({block: 'start'}); } else scrollTo(0, 0);
 }
+// קישור ישיר למוצר: myripo.com/bike-store/#p/<מספר מוצר> – פותח את האוסף, גולל לכרטיס ומדגיש אותו
+function showProduct(id){
+  const p = DB.products.find(x => x.id === id);
+  if (!p) { history.replaceState(null, '', '#'); setCollection(''); return; }
+  setCollection(p.collection);
+  track('view_item', {item_id: p.id, item_brand: p.brand, item_category: p.collection, item_name: p.title});
+  const el = $('list').querySelector(`[data-pid="${p.id}"]`);
+  if (el) { el.classList.add('hl'); setTimeout(() => el.scrollIntoView({block: 'center'}), 60); }
+}
 function route(){
   const hsh = location.hash.slice(1);
+  if (hsh.startsWith('p/')) return showProduct(hsh.slice(2));
   if (hsh === 'deals' && hasDeals()) return showDeals();
   if (hsh === 'news' && NEWS.length) return showNews();
   if (hsh.startsWith('plan') && ACTS().length) { const [, a] = hsh.split('/'); return showPlan(a || null); }
@@ -663,7 +675,7 @@ Promise.all([fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()
   const [y,m,d] = DB.updated.split('-');
   $('checked').textContent = `המחירים, הדירוגים ומספר ההזמנות נבדקו ב-${+d}/${+m}/${y} ויכולים להשתנות. המחיר המעודכן מופיע בדף המוצר.`;
   setCollection(DB.collections.some(c => c.id === location.hash.slice(1)) ? location.hash.slice(1) : '');
-  if (location.hash.slice(1).startsWith('cam') || location.hash.slice(1).startsWith('plan') || location.hash === '#deals' || location.hash === '#news') route();
+  if (location.hash.startsWith('#p/') || location.hash.slice(1).startsWith('cam') || location.hash.slice(1).startsWith('plan') || location.hash === '#deals' || location.hash === '#news') route();
 }).catch(() => { $('list').innerHTML = '<p class="empty">לא הצלחנו לטעון את המוצרים. נסו לרענן את העמוד.</p>'; });
 
 let searchTimer;
