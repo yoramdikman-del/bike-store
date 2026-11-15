@@ -276,5 +276,6 @@ fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(db => 
   });
 }).catch(() => document.querySelectorAll('.picks').forEach(b => b.innerHTML = '<p>המוצרים נמצאים בחנות.</p>'));
 </script>
+<script src="analytics.js" defer></script>
 </body>
 </html>

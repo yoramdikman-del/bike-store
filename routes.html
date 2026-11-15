@@ -272,5 +272,6 @@ window.addEventListener('afterprint', () => {
 document.querySelectorAll('.out button').forEach(b => b.onclick = () => prepAndPrint(b.dataset.out));
 const h = location.hash.slice(1); if (PTS.some(p => p.lv === h)) filt(h); else filt('all');
 </script>
+<script src="analytics.js" defer></script>
 </body>
 </html>
