@@ -72,6 +72,14 @@ td:first-child{font-weight:600}
 footer{border-top:2px solid var(--line);margin-top:30px;padding:22px 0 40px;color:var(--ink-soft);font-size:.92rem}
 footer a{color:var(--ink);font-weight:700}
 @media (max-width:560px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}.pk .t{font-size:.88rem}section.g{box-shadow:4px 4px 0 var(--shadow)}}
+
+/* Mobile: tables become stacked cards so no column is cut off */
+@media (max-width:640px){.tbl{overflow:visible;border:0;border-radius:0}.tbl table{min-width:0}.tbl table,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}.tbl tr:first-child{display:none}.tbl tr{border:2px solid var(--line);border-radius:16px;margin:0 0 10px;overflow:hidden;background:var(--card)}.tbl td{border:0;padding:6px 14px}.tbl td:first-child{background:var(--teal);color:#f3f5ef;padding:10px 14px;font-size:1.05rem}.tbl td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font-size:.8rem;font-weight:700;color:var(--accent)}.tbl td:last-child{padding-bottom:12px}}
+.pk .t{overflow-wrap:anywhere}.pk .t span{display:inline-block;max-width:100%}
+
+/* Mobile: tables become stacked cards so no column is cut off */
+@media (max-width:640px){.tbl{overflow:visible;border:0;border-radius:0}.tbl table{min-width:0}.tbl table,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}.tbl tr:first-child{display:none}.tbl tr{border:2px solid var(--line);border-radius:16px;margin:0 0 10px;overflow:hidden;background:var(--card)}.tbl td{border:0;padding:6px 14px}.tbl td:first-child{background:var(--teal);color:#f3f5ef;padding:10px 14px;font-size:1.05rem}.tbl td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font-size:.8rem;font-weight:700;color:var(--accent)}.tbl td:last-child{padding-bottom:12px}}
+.pk .t{overflow-wrap:anywhere}.pk .t span{display:inline-block;max-width:100%}
 </style>
 </head>
 <body>
@@ -256,6 +264,10 @@ footer a{color:var(--ink);font-weight:700}
 </div></footer>
 
 <script>
+// Label each cell with its column header (used by the stacked mobile table layout)
+document.querySelectorAll('.tbl table').forEach(t => { const h = [...t.rows[0].cells].map(c => c.textContent.trim()); [...t.rows].slice(1).forEach(r => [...r.cells].forEach((c, i) => { if (h[i]) c.dataset.l = h[i]; })); });
+// Label each cell with its column header (used by the stacked mobile table layout)
+document.querySelectorAll('.tbl table').forEach(t => { const h = [...t.rows[0].cells].map(c => c.textContent.trim()); [...t.rows].slice(1).forEach(r => [...r.cells].forEach((c, i) => { if (h[i]) c.dataset.l = h[i]; })); });
 document.getElementById('year').textContent = new Date().getFullYear();
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function imgFail(el){
@@ -269,7 +281,7 @@ fetch('data/products.json', {cache: 'no-cache'}).then(r => r.json()).then(db => 
       const i = x.indexOf(':'); const id = x.slice(0, i), why = x.slice(i + 1);
       const p = byId[id]; if (!p) return '';
       return `<div class="pk"><div class="im">${p.img ? `<img loading="lazy" referrerpolicy="no-referrer" src="${esc(p.img)}" alt="${esc(p.title)}" onerror="imgFail(this)">` : ''}</div>
-        <div class="bd"><span class="why">${esc(why)}</span><div class="t"><span>${esc(p.brand)}</span>${esc(p.title)}</div>
+        <div class="bd"><span class="why">${esc(why)}</span><div class="t"><span>${esc(p.brand)}</span> ${esc(p.title)}</div>
         <div class="m">${p.rating}% חיובי · ${Number(p.sold).toLocaleString('he-IL')} נמכרו · ${p.variant ? 'כ־' : 'החל מ־'}<bdi dir="ltr">${Math.round(p.price)}$</bdi></div>
         <a href="${esc(p.link)}" target="_blank" rel="noopener sponsored">לרכישה ←</a></div></div>`;
     }).join('');
